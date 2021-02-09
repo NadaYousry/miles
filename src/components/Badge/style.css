@@ -1,6 +1,8 @@
+@import "./../../generalStyles/fontStyles";
+
 .alert-light {
-  background-color: white;
-  color: #000000;
+  background-color: var(--white);
+  color: var(--black);
   border-radius: 7px;
 }
 .time-date-container .badge:first-of-type {
@@ -8,7 +10,7 @@
 }
 
 .badge.gray {
-  background-color: #edf2f4;
+  background-color: var(--lightGray);
   border-radius: 5px;
   padding: 2% 3%;
   font-weight: lighter;
@@ -23,9 +25,9 @@
   width: 15%;
 }
 .badge.orange {
-  border: 1px solid #fd5303;
+  border: 1px solid var(--orange);
   background-color: transparent;
-  color: #fd5303;
+  color: var(--orange);
   font-size: 14px;
   font-weight: 500;
   padding: 5% 8%;
@@ -42,7 +44,7 @@
     border-radius: 6px;
   }
   .time-date-container .info-container span {
-    font-size: 10px;
+    font-size: 12px;
   }
   .card-container {
     width: 100%;
@@ -51,5 +53,10 @@
     width: 48%;
     border-radius: 6px;
     padding: 2% 2%;
+  }
+  .badge.orange {
+    font-family: var(--boldFont);
+    font-size: 12px;
+    width: 70%;
   }
 }

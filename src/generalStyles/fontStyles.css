@@ -1,0 +1,14 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --baleWhite: #f5f9f9;
+  --lightGray: #edf2f4;
+  --textGray: #979797;
+  --darkBlue: #3a5c8d;
+  --green: #6abf48;
+  --darkGreen: #519e32;
+  --orange: #fd5303;
+  --darkOrange: #fd5303;
+  --regularFont: CenturyGothic-regular;
+  --boldFont: CenturyGothic-Bold;
+}

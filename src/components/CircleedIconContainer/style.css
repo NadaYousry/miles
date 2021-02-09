@@ -1,0 +1,31 @@
+@import "./../../generalStyles/fontStyles";
+.icon-wrapper {
+  background-color: var(--white);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+/* activity icons */
+.icon-wrapper:hover {
+  transform: scale(1.05);
+}
+.icon-wrapper:hover + .icon-description {
+  color: var(--darkBlue);
+}
+.icon-description {
+  font-size: 12px;
+}
+@media screen and (max-width: 480px) {
+  .icon-description {
+    font-size: 11px;
+  }
+  .reviewer-name {
+    font-size: 12px;
+  }
+  .icon-wrapper {
+    width: 45px;
+    height: 45px;
+  }
+}

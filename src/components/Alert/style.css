@@ -1,5 +1,23 @@
+@import "./../../generalStyles/fontStyles";
+
 .alert-light {
-  background-color: white;
-  color: #000000;
+  background-color: var(--white);
+  color: var(--black);
   border-radius: 7px;
+}
+.alert-wrapper .alert {
+  width: 90%;
+  margin: auto;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  .alert-wrapper .alert {
+    width: 100%;
+  }
+  .alert-wrapper {
+    border-bottom: 1px solid var(--lightGray);
+    padding-bottom: 4%;
+    margin-bottom: 2%;
+  }
 }

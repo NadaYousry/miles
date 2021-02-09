@@ -1,9 +1,7 @@
-body {
-  scroll-behavior: smooth;
-}
+@import "./generalStyles/fontStyles";
 .App {
   text-align: center;
-  background-color: #edf2f4 !important;
+  background-color: var(--lightGray) !important;
 }
 p {
   text-align: left;
@@ -16,14 +14,14 @@ p {
   text-transform: capitalize;
 }
 a:hover {
-  color: #3a5c8d;
+  color: var(--darkBlue);
   text-decoration: none;
 }
 .section-separator {
-  border-bottom: 1px solid #edf2f4;
+  border-bottom: 1px solid var(--lightGray);
 }
 .section-separator-right {
-  border-right: 1px solid #edf2f4;
+  border-right: 1px solid var(--lightGray);
 }
 .view-all-link {
   margin-top: 5%;

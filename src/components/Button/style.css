@@ -1,27 +1,35 @@
+@import "./../../generalStyles/fontStyles";
 .green-btn {
   display: inline-block !important;
-  width: 70% !important;
   padding: 2% 5%;
-  background-color: #6abf48;
-  border-color: #6abf48;
+  background-color: var(--green);
+  border-color: var(--green);
+}
+.btn {
+  width: 70% !important;
 }
 .green-btn:hover {
-  background-color: #519e32;
-  border-color: #519e32;
+  background-color: var(--darkGreen);
+  border-color: var(--darkGreen);
 }
 
 .green-btn:focus {
-  background-color: #519e32;
-  border-color: #519e32;
+  background-color: var(--darkGreen);
+  border-color: var(--darkGreen);
   outline: none;
-  box-shadow: 0 0 0 0.2rem #6abf48;
+  box-shadow: 0 0 0 0.2rem var(--green);
 }
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-  background-color: #519e32;
-  border-color: #519e32;
+  background-color: var(--darkGreen);
+  border-color: var(--darkGreen);
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus {
-  box-shadow: 0 0 0 0.2rem #6abf48 !important;
+  box-shadow: 0 0 0 0.2rem var(--green) !important;
+}
+@media screen and (max-width: 480px) {
+  .btn {
+    width: 100% !important;
+  }
 }

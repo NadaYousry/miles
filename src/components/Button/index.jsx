@@ -3,7 +3,7 @@ import {  Button } from "react-bootstrap";
 import "./style.css";
 const ButtonComponent = ({ text, theme }) => {
   return (
-    <Button variant="primary " className={`${theme}-btn ml-auto ${theme}`}>
+    <Button variant="primary " className={`${theme}-btn ml-auto btn ${theme}`}>
       {text}
     </Button>
   );

@@ -1,3 +1,4 @@
+@import "./../../generalStyles/fontStyles";
 .card-title {
   letter-spacing: 0.52px;
   font-size: 20px;
@@ -10,14 +11,14 @@
 }
 .feature-type {
   font-size: 12px;
-  font-weight: bold;
+  font-family: var(--boldFont);
 }
 .feature-type.green {
-  color: #6abf48;
+  color: var(--green);
 }
 .feature-description {
   font-size: 14px;
-  color: #979797;
+  color: var(--textGray);
   font-weight: lighter;
 }
 @media screen and (max-width: 480px) {
@@ -36,7 +37,7 @@
     border-radius: 6px;
   }
   .time-date-container .info-container span {
-    font-size: 10px;
+    font-size: 12px;
   }
   .feature-info-container {
     display: flex;

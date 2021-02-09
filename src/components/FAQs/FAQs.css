@@ -1,7 +1,8 @@
+@import "./../../generalStyles/fontStyles";
 .card-title {
   letter-spacing: 0.52px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: CenturyGothic-Bold;
   letter-spacing: 1px;
   line-height: 1.5rem;
 }
@@ -20,7 +21,7 @@ h3 {
 .collapse .card-body {
   border-radius: 7px;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: var(--white);
   text-align: left;
 }
 .accordion-toggle {

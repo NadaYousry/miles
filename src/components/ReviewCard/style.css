@@ -1,5 +1,7 @@
+@import "./../../generalStyles/fontStyles";
+
 .review {
-  background-color: #6abf48 !important;
+  background-color: var(--green) !important;
 }
 
 .reviewer-name {

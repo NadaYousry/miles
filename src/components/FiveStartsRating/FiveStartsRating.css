@@ -1,3 +1,4 @@
+@import "./../../generalStyles/fontStyles";
 .five-stars-container {
   display: flex;
   align-items: center;
@@ -5,12 +6,12 @@
   margin-bottom: 9%;
 }
 .five-star-icon {
-  color: #3a5c8d;
+  color: var(--darkBlue);
   font-size: 14px;
 }
 
 .five-star-rating {
-  font-weight: bold;
+  font-family: var(--boldFont);
   font-size: 14px;
 }
 

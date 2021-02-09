@@ -1,8 +1,10 @@
+@import "./../../generalStyles/fontStyles";
+
 .navbar {
   width: 100%;
 }
 .navbar-container {
-  background-color: white;
+  background-color: var(--white);
   margin-bottom: 4%;
 }
 .navbar-nav .nav-link {

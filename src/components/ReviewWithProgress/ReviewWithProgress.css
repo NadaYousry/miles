@@ -1,13 +1,15 @@
+@import "./../../generalStyles/fontStyles";
+
 .five-stars-with-progress-container {
   margin-bottom: 1%;
 }
 .five-star-with-progress-icon {
-  color: #6abf48;
+  color: var(--green);
   font-size: 14px;
 }
 
 .five-star-with-progress-rating {
-  font-weight: bold;
+  font-family: var(--boldFont);
   font-size: 54px;
 }
 
@@ -28,7 +30,7 @@
   margin-bottom: 0;
 }
 .progress-bar.bg-success {
-  background-color: #6abf48 !important;
+  background-color: var(--green) !important;
 }
 @media screen and (max-width: 480px) {
   .progress {
@@ -38,9 +40,12 @@
     margin-bottom: 0;
   }
   .progress-container span {
-    font-size: 12px;
+    font-size: 14px;
   }
   .five-stars-with-progress-container {
     margin-bottom: 10%;
+  }
+  .five-star-with-progress-rating {
+    font-size: 40px;
   }
 }
