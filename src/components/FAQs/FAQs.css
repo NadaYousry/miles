@@ -1,0 +1,31 @@
+.card-title {
+  letter-spacing: 0.52px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+.accordion > .card > .card-header {
+  border: none;
+  cursor: pointer;
+}
+h3 {
+  font-size: 16px;
+  text-align: left;
+}
+.faq .collapse {
+  background-color: #f5f9f9;
+}
+
+.collapse .card-body {
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: #ffffff;
+  text-align: left;
+}
+.accordion-toggle {
+  position: relative;
+  z-index: 3;
+}
+@media screen and (max-width: 480px) {
+}

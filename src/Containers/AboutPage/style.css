@@ -1,0 +1,111 @@
+.home-container {
+  background-color: #f5f9f9;
+  border-radius: 5px;
+  z-index: 4;
+  margin-top: -3%;
+  position: relative;
+}
+.heading {
+  letter-spacing: 0.52px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+.sub-heading {
+  letter-spacing: 0.52px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+.nav-tabs {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #edf2f4;
+  padding-bottom: 2%;
+  margin-bottom: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-link {
+  border: none !important;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #000000;
+  padding-left: 0;
+  padding-right: 0;
+  text-transform: capitalize;
+}
+.nav-link.active {
+  font-weight: bold;
+  color: #000000;
+  position: relative;
+  background-color: transparent !important;
+}
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 55px;
+  height: 2px;
+  background-color: #3a5c8d;
+  border-radius: 14px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -17px;
+}
+.icon-wrapper {
+  background-color: #ffffff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+/* activity icons */
+.icon-wrapper:hover {
+  transform: scale(1.05);
+}
+.icon-wrapper:hover + .icon-description {
+  color: #3a5c8d;
+}
+.icon-description {
+  font-size: 12px;
+}
+@media screen and (max-width: 480px) {
+  .home-container {
+    margin-top: -10%;
+    padding-left: 1% !important;
+    padding-right: 1% !important;
+  }
+  .video-play-icon {
+    display: none;
+  }
+  .heading {
+    text-align: center !important;
+    font-size: 17px;
+  }
+  .nav-tabs .nav-link {
+    font-size: 10px;
+  }
+  .nav-link.active::after {
+    width: 30px;
+    bottom: -5px;
+  }
+  .nav-tabs {
+    margin-bottom: 18%;
+  }
+
+  .icon-description {
+    font-size: 11px;
+  }
+  .sub-heading {
+    text-align: center !important;
+  }
+  .reviewer-name {
+    font-size: 12px;
+  }
+}

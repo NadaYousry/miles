@@ -1,0 +1,83 @@
+.card-title {
+  letter-spacing: 0.52px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+.feature-container p {
+  text-align: left;
+}
+.feature-type {
+  font-size: 12px;
+  font-weight: bold;
+}
+.feature-type.green {
+  color: #6abf48;
+}
+.feature-description {
+  font-size: 14px;
+  color: #979797;
+  font-weight: lighter;
+}
+.view-btn {
+  display: inline-block !important;
+  width: 70% !important;
+  padding: 2% 5%;
+  background-color: #6abf48;
+  border-color: #6abf48;
+}
+.view-btn:hover {
+  background-color: #519e32;
+  border-color: #519e32;
+}
+
+.view-btn:focus {
+  background-color: #519e32;
+  border-color: #519e32;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem #6abf48;
+}
+@media screen and (max-width: 480px) {
+  .view-btn {
+    width: 100% !important;
+  }
+  .feature-description {
+    margin-bottom: 5% !important;
+  }
+  .date-and-time-info {
+    margin-bottom: 5% !important;
+  }
+  .note {
+    margin-bottom: 5% !important;
+    padding: 3% 5%;
+    border-radius: 6px;
+  }
+  .time-date-container .info-container span {
+    font-size: 10px;
+  }
+  .feature-info-container {
+    display: flex;
+  }
+  .feature-info-container .title-info {
+    order: 1;
+  }
+  .feature-info-container .date-and-time-info {
+    order: 3;
+  }
+  .feature-info-container .description-info {
+    order: 2;
+  }
+  .feature-info-container .feature-button {
+    order: 4;
+  }
+
+  .card-container {
+    width: 100%;
+  }
+  .time-date-container .badge {
+    width: 48%;
+    border-radius: 6px;
+    padding: 2% 2%;
+  }
+}

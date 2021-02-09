@@ -1,0 +1,12 @@
+.card-container {
+  width: 90%;
+}
+.card {
+  background: #ffffff;
+  border-radius: 7px;
+  border: none;
+  overflow: hidden;
+}
+.icon-container {
+  width: 5%;
+}

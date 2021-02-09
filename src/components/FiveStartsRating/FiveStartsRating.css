@@ -1,0 +1,26 @@
+.five-stars-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 9%;
+}
+.five-star-icon {
+  color: #3a5c8d;
+  font-size: 14px;
+}
+
+.five-star-rating {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.five-star-text {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+@media screen and (max-width: 480px) {
+  .five-stars-container {
+    justify-content: center;
+  }
+}

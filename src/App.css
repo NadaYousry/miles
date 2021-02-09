@@ -1,0 +1,37 @@
+body {
+  scroll-behavior: smooth;
+}
+.App {
+  text-align: center;
+  background-color: #edf2f4 !important;
+}
+p {
+  text-align: left;
+  letter-spacing: 0.5px;
+  line-height: 1.7rem;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  text-transform: capitalize;
+}
+a:hover {
+  color: #3a5c8d;
+  text-decoration: none;
+}
+.section-separator {
+  border-bottom: 1px solid #edf2f4;
+}
+.section-separator-right {
+  border-right: 1px solid #edf2f4;
+}
+.view-all-link {
+  margin-top: 5%;
+}
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.2rem;
+  }
+}

@@ -1,0 +1,55 @@
+.alert-light {
+  background-color: white;
+  color: #000000;
+  border-radius: 7px;
+}
+.time-date-container .badge:first-of-type {
+  margin-right: 2%;
+}
+
+.badge.gray {
+  background-color: #edf2f4;
+  border-radius: 5px;
+  padding: 2% 3%;
+  font-weight: lighter;
+}
+.time-date-container .badge {
+  width: 35%;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 1% 2%;
+}
+.badge .icon-container {
+  width: 15%;
+}
+.badge.orange {
+  border: 1px solid #fd5303;
+  background-color: transparent;
+  color: #fd5303;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5% 8%;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .date-and-time-info {
+    margin-bottom: 5% !important;
+  }
+  .badge.orange {
+    margin-bottom: 5% !important;
+    padding: 3% 5%;
+    border-radius: 6px;
+  }
+  .time-date-container .info-container span {
+    font-size: 10px;
+  }
+  .card-container {
+    width: 100%;
+  }
+  .time-date-container .badge {
+    width: 48%;
+    border-radius: 6px;
+    padding: 2% 2%;
+  }
+}

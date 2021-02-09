@@ -1,0 +1,29 @@
+.navbar {
+  width: 100%;
+}
+.navbar-container {
+  background-color: white;
+  margin-bottom: 4%;
+}
+.navbar-nav .nav-link {
+  color: black !important;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.logo-container {
+  width: 75px;
+  height: 75px;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("./../../assets/images/navbar/collapse.svg") !important;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-container {
+    margin-bottom: 0%;
+  }
+  .navbar-light .navbar-toggler {
+    border: none;
+  }
+}

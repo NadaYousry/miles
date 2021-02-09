@@ -1,0 +1,18 @@
+.image-container {
+  height: 300px;
+  overflow: hidden;
+}
+.image-container img {
+  width: 166%;
+}
+.price-label {
+  position: absolute;
+  background-color: #b30d5a;
+  padding: 2%;
+  top: 5%;
+  right: 0;
+  color: white;
+  font-weight: bold;
+  padding: 2px 30px 2px 10px;
+  border-radius: 10px 0 0 10px;
+}
