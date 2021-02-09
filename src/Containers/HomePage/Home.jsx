@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Carousels from "../../components/Carousel/Carousel";
-import NavBar from "../../components/Navbar/Nav";
+import Carousels from "../../components/Carousel";
+import NavBar from "../../components/Navbar";
 import BodyContainer from "../BodyContainer";
 const Home = () => {
   const [isMobileScreen, setIsMobileScreen] = useState(false);

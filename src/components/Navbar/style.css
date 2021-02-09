@@ -28,4 +28,8 @@
   .navbar-light .navbar-toggler {
     border: none;
   }
+  .logo-container {
+    width: 65px;
+    height: 65px;
+  }
 }

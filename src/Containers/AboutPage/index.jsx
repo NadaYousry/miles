@@ -1,5 +1,5 @@
 import React from "react";
-import FiveStartsRating from "../../components/FiveStartsRating/FiveStartsRating";
+import FiveStartsRating from "../../components/FiveStartsRating";
 import CourtsIcon from "./../../assets/images/about/5courts.svg";
 import GymIcon from "./../../assets/images/about/gym.svg";
 import SwimmingIcon from "./../../assets/images/about//swim.svg";

@@ -1,8 +1,9 @@
 import React from "react";
 import { Tabs, Tab } from "react-bootstrap";
 import AboutPage from "../AboutPage";
+import GallaryPage from "../GallaryPage";
 import "./style.css";
-const BodyContainer = ({isMobileScreen}) => {
+const BodyContainer = ({ isMobileScreen }) => {
   return (
     <div className="home-container container py-5 px-4 ">
       <div className="container">
@@ -17,7 +18,7 @@ const BodyContainer = ({isMobileScreen}) => {
           <div className="col-12">
             <Tabs defaultActiveKey="about" id="uncontrolled-tab-example">
               <Tab eventKey="about" title="about">
-                <AboutPage isMobileScreen={isMobileScreen}/>
+                <AboutPage isMobileScreen={isMobileScreen} />
               </Tab>
               <Tab eventKey="groupLesson" title="groupLesson">
                 group Lessons
@@ -26,7 +27,7 @@ const BodyContainer = ({isMobileScreen}) => {
                 reviews
               </Tab>
               <Tab eventKey="gallery" title="gallery">
-                gallery
+                <GallaryPage isMobileScreen={isMobileScreen} />
               </Tab>
               <Tab eventKey="faq" title="faq">
                 faq

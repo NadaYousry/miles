@@ -1,0 +1,27 @@
+@import "./../../generalStyles/fontStyles";
+.image-card-container {
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.image-card-container > .card > img {
+  transition: all 0.3s ease-in-out;
+}
+.image-card-container:hover > .card > img {
+  transform: scale(1.05);
+}
+.image-card-container:hover > .image-filter > .image-filter-icon.hidden {
+  opacity: 1;
+}
+.image-card-container:hover > .image-filter {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.image-filter-icon.hidden {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  color: var(--white);
+}
+@media screen and (max-width: 480px) {
+}

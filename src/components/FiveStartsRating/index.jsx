@@ -1,7 +1,7 @@
 import { faGrinStars, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import "./FiveStartsRating.css";
+import "./style.css";
 const FiveStartsRating = () => {
   const stars = [
     {

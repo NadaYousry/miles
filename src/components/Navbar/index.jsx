@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "./../../assets/images/navbar/logo.svg";
 import { Nav } from "react-bootstrap";
-import "./Nav.css";
+import "./style.css";
 const NavBar = ({isMobileScreen}) => {
  
   return (
