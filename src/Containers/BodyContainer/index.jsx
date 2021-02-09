@@ -4,7 +4,7 @@ import AboutPage from "../AboutPage";
 import "./style.css";
 const BodyContainer = ({isMobileScreen}) => {
   return (
-    <div className="home-container container py-5 px-4 col-11 col-lg-9">
+    <div className="home-container container py-5 px-4 ">
       <div className="container">
         <div className="row mb-4">
           <div className="col-12 col-lg-4">

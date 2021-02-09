@@ -1,6 +1,7 @@
 import React from "react";
-import { Badge, Button, Card } from "react-bootstrap";
+import {  Card } from "react-bootstrap";
 import BadgeComponent from "../Badge";
+import ButtonComponent from "../Button";
 import TimeIcon from "./../../assets/images/about/badge-time-icon.svg";
 import DateIcon from "./../../assets/images/about/date-icon.svg";
 import "./style.css";
@@ -48,7 +49,7 @@ const FeaturedCard = ({ isMobileScreen }) => {
     },
   ];
   return (
-    <div className="feature-container card-container m-auto pb-3">
+    <div className="feature-container card-container">
       {featuredData?.map((data, index) => {
         return (
           <Card
@@ -111,9 +112,7 @@ const FeaturedCard = ({ isMobileScreen }) => {
                   </Card.Text>
                 </div>
                 <div className="col-lg-3 col-12 text-right feature-button p-0">
-                  <Button variant="primary " className="view-btn ml-auto">
-                    View
-                  </Button>
+                  <ButtonComponent text={'View'} theme={"green"}/>
                 </div>
               </div>
             </Card.Body>

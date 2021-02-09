@@ -21,7 +21,7 @@ const AccordionComponent = ({data}) => {
           as={Card.Header}
           eventKey={`${data.id}`}
           data-event={data.id}
-          className="d-flex align-items-center"
+          className="d-flex align-items-center px-0"
           onClick={(e) => {
             onToggleAccordion(e);
           }}

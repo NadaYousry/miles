@@ -5,6 +5,10 @@
   border-radius: 5px;
   overflow: hidden;
 }
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+}
 .carousel-inner {
   height: 100%;
 }
@@ -13,6 +17,14 @@
 }
 .carousel-caption {
   bottom: 15% !important;
+}
+.carousel-control-prev-icon {
+  background-image: url("./../../assets/images/home/Left Arrow.svg");
+  background-size: contain;
+}
+.carousel-control-next-icon {
+  background-image: url("./../../assets/images/home/Right Arrow.svg");
+  background-size: contain;
 }
 .carousel-indicators li {
   width: 7px;

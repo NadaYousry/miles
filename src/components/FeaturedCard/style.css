@@ -20,24 +20,6 @@
   color: #979797;
   font-weight: lighter;
 }
-.view-btn {
-  display: inline-block !important;
-  width: 70% !important;
-  padding: 2% 5%;
-  background-color: #6abf48;
-  border-color: #6abf48;
-}
-.view-btn:hover {
-  background-color: #519e32;
-  border-color: #519e32;
-}
-
-.view-btn:focus {
-  background-color: #519e32;
-  border-color: #519e32;
-  outline: none;
-  box-shadow: 0 0 0 0.2rem #6abf48;
-}
 @media screen and (max-width: 480px) {
   .view-btn {
     width: 100% !important;

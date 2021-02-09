@@ -1,5 +1,5 @@
 .card-container {
-  width: 90%;
+  width: 100%;
 }
 .card {
   background: #ffffff;
@@ -8,5 +8,5 @@
   overflow: hidden;
 }
 .icon-container {
-  width: 5%;
+  width: 3.5%;
 }
