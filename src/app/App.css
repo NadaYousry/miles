@@ -1,7 +1,8 @@
-@import "./../generalStyles/fontStyles";
+@import "./../generalStyles/variables.css";
 .App {
   text-align: center;
   background-color: var(--lightGray) !important;
+  font-family: var(--regularFont);
 }
 p {
   text-align: left;
@@ -26,10 +27,16 @@ a:hover {
 .section-separator-top:first-of-type {
   border-top: 1px solid var(--lightGray);
 }
+
 .view-all-link {
   margin-top: 5%;
 }
-
+.link {
+  cursor: pointer;
+}
+.link p {
+  display: inline-block;
+}
 /* style scroll */
 ::-webkit-scrollbar {
   width: 5px;

@@ -1,4 +1,4 @@
-@import "./../../generalStyles/fontStyles";
+@import "./../../generalStyles/variables.css";
 .home-container {
   background-color: #f5f9f9;
   border-radius: 5px;

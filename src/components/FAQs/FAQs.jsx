@@ -5,25 +5,25 @@ const FAQs = ({isMobileScreen}) => {
   const faqsData = [
     {
       id:1,
-      question: "What are the rules in place related to Corvid-19 regulations?",
+      question: "What are the rules in place related to Corvid-19 regulations",
       answer:
         "The condition for such operation is that public transport vehicles are only permitted to transport persons permitted to travel between Provinces in terms of the Regulations. ",
     },
     {
       id:2,
-      question: "What are the rules in place related to Corvid-19 regulations?",
+      question: "What are the rules in place related to Corvid-19 regulations",
       answer:
         "The condition for such operation is that public transport vehicles are only permitted to transport persons permitted to travel between Provinces in terms of the Regulations. ",
     },
     {
       id:3,
-      question: "How quickly can I get a new slot?",
+      question: "How quickly can I get a new slot",
       answer:
         "The condition for such operation is that public transport vehicles are only permitted to transport persons permitted to travel between Provinces in terms of the Regulations. ",
     },
     {
       id:4,
-      question: "How many students are permitted in a class?",
+      question: "How many students are permitted in a class",
       answer:
         "The condition for such operation is that public transport vehicles are only permitted to transport persons permitted to travel between Provinces in terms of the Regulations. ",
     },

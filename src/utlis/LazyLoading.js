@@ -9,6 +9,9 @@ export const AboutPage = React.lazy(() =>
 export const Home = React.lazy(() =>
   import("./../Containers/HomePage")
 );
+export const PrivateLessonsPage = React.lazy(() =>
+  import("./../Containers/PrivateLessonsPage")
+);
 export const ReviewsPage = React.lazy(() =>
   import("./../Containers/ReviewsPage")
 );

@@ -17,7 +17,7 @@ const ReviewCardContainer = ({ isMobileScreen }) => {
         return (
           <div
             key={index}
-            className={`row no-gutters align-items-start py-3 section-separator ${
+            className={`row no-gutters align-i  tems-start py-3  ${reviewData.length?"section-separator":""} ${
               reviewData.length > 1 ? "section-separator-top" : ""
             }`}
           >

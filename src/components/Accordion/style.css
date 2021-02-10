@@ -1,1 +1,6 @@
-@import "./../../generalStyles/fontStyles";
+.accordion h3 {
+  font-family: var(--boldFont);
+}
+.accordion .card-body {
+  text-align: left;
+}
