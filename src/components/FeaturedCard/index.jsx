@@ -75,13 +75,9 @@ const FeaturedCard = ({ isMobileScreen }) => {
                   </div>
                   <div className="col-12 p-0">
                     <Card.Text>
-                      <span className="d-inline-block feature-type">
                         {data.type}
-                      </span>
                       -
-                      <span className="d-inline-block feature-type green">
                         {data.for}
-                      </span>
                     </Card.Text>
                   </div>
                 </div>

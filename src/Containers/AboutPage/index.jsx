@@ -55,10 +55,14 @@ const AboutPage = ({ isMobileScreen }) => {
           </p>
           <div className="">
             <div className="pb-4 activity-icons d-flex align-items-center justify-content-around">
-              {fiveIconData.map((data) => {
+              {fiveIconData.map((data, index) => {
                 return (
-                  <CircledIconContainer icon={data.icon} name={data.name} />
-                
+                  <div
+                    className=" d-flex align-items-center justify-content-center flex-column"
+                    key={index}
+                  >
+                    <CircledIconContainer icon={data.icon} name={data.name} />
+                  </div>
                 );
               })}
             </div>
@@ -71,7 +75,13 @@ const AboutPage = ({ isMobileScreen }) => {
           </div>
         </div>
         <div className="col-12 col-md-12 col-lg-6">
-          <h2 className={`sub-heading text-left text-center ${isMobileScreen?"mb-3":"mb-4"}`}>Map</h2>
+          <h2
+            className={`sub-heading text-left text-center ${
+              isMobileScreen ? "mb-3" : "mb-4"
+            }`}
+          >
+            Map
+          </h2>
           <MapCard />
         </div>
       </section>
@@ -81,7 +91,7 @@ const AboutPage = ({ isMobileScreen }) => {
         </div>
         <div className="col-12 col-md-12 col-lg-12">
           <h2 className="sub-heading text-left mb-3">Reviews</h2>
-          <ReviewCardContainer  isMobileScreen={isMobileScreen} />
+          <ReviewCardContainer isMobileScreen={isMobileScreen} />
         </div>
       </section>
       <section className="row section-separator p-0 pb-5 mb-5">
@@ -102,7 +112,7 @@ const AboutPage = ({ isMobileScreen }) => {
           <div className="faq-container">
             <div className="row no-gutters align-items-start">
               <div className="col-12">
-                <FAQs isMobileScreen={isMobileScreen}/>
+                <FAQs isMobileScreen={isMobileScreen} />
               </div>
             </div>
           </div>

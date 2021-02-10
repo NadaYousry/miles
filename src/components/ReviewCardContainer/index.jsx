@@ -9,14 +9,24 @@ const ReviewCardContainer = ({ isMobileScreen }) => {
       reviewerName: "Peter Andrews",
       message:
         "Attracts staff and students from IU with very nice courts forall round use.",
-    }
+    },
   ];
-  console.log(reviewData);
   return (
     <div className="review-container">
       {reviewData.map((review, index) => {
         return (
-          <ReviewCard isMobileScreen={isMobileScreen} review={review} key={index} length={reviewData.length}/>
+          <div
+            key={index}
+            className={`row no-gutters align-items-start py-3 section-separator ${
+              reviewData.length > 1 ? "section-separator-top" : ""
+            }`}
+          >
+            <ReviewCard
+              isMobileScreen={isMobileScreen}
+              review={review}
+              length={reviewData.length}
+            />
+          </div>
         );
       })}
 
@@ -26,7 +36,7 @@ const ReviewCardContainer = ({ isMobileScreen }) => {
             <p className={`${isMobileScreen ? "text-center" : "text-right"}`}>
               view all
             </p>
-          </div>  
+          </div>
         </div>
       </div>
     </div>

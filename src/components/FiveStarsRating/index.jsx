@@ -33,7 +33,9 @@ const FiveStarsRating = () => {
         className={`star-icon-wrapper d-flex align-items-center justify-content-center mx-2`}
       >
         {stars.map((star, index) => {
-          return <Star theme={"blue"} />;
+          return(
+            <div key={index}>
+            <Star theme={"blue"}/></div>);
         })}
       </div>
       <span className="d-inline-block five-star-text">(122)</span>

@@ -19,7 +19,7 @@
   line-height: 1.5rem;
 }
 
-.nav-tabs {
+.navbar {
   width: 100%;
   border: none;
   border-bottom: 1px solid var(--lightGray);
@@ -70,7 +70,7 @@
     text-align: center !important;
     font-size: 17px;
   }
-  .nav-tabs .nav-link {
+  .navbar .nav-link {
     font-size: 10px;
   }
   .nav-link.active::after {

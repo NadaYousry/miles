@@ -53,7 +53,11 @@ const ReviewWithProgress = () => {
               className={`star-icon-wrapper d-flex align-items-center justify-content-center`}
             >
               {stars.map((data, index) => {
-                return <Star theme={"green"} />;
+                return (
+                  <div key={index}>
+                    <Star theme={"green"} />
+                  </div>
+                );
               })}
             </div>
           </div>

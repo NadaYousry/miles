@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import AccordionComponent from "../Accordion";
 import "./FAQs.css";
 const FAQs = ({isMobileScreen}) => {
-  const [isOpen, setIsOpen] = useState(false);
-
   const faqsData = [
     {
       id:1,

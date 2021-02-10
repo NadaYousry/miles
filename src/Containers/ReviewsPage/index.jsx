@@ -2,7 +2,7 @@ import React from "react";
 import ReviewCard from "../../components/ReviewCard";
 import ReviewWithProgress from "../../components/ReviewWithProgress";
 import ReviewIcon from "./../../assets/images/about/review.svg";
-const ReviewPage = ({ isMobileScreen }) => {
+const ReviewsPage = ({ isMobileScreen }) => {
   const allReviews = [
     {
       reviewIcon: ReviewIcon,
@@ -44,4 +44,4 @@ const ReviewPage = ({ isMobileScreen }) => {
   );
 };
 
-export default ReviewPage;
+export default ReviewsPage;

@@ -3,12 +3,11 @@ import { Accordion, Card } from "react-bootstrap";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./style.css";
-const AccordionComponent = ({data}) => {
+const AccordionComponent = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-
   const onToggleAccordion = (e) => {
-         if (isOpen) {
+    if (isOpen) {
       setIsOpen(false);
     } else {
       setIsOpen(true);
@@ -36,9 +35,7 @@ const AccordionComponent = ({data}) => {
           <h3 className="my-0">{data.question}</h3>
         </Accordion.Toggle>
         <Accordion.Collapse eventKey={`${data.id}`}>
-          <Card.Body>
-            {data.answer}
-          </Card.Body>
+          <Card.Body>{data.answer}</Card.Body>
         </Accordion.Collapse>
       </Card>
     </Accordion>

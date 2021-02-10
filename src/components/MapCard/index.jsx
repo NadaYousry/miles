@@ -23,18 +23,16 @@ const MapCard = () => {
   return (
     <div className=" m-auto pb-3 map-container">
       <Card className="">
-        <div className="image-container w-100 d-flex align-items-center justify-content-center">
-          <img src={LocationMap} className="w-100" />
-        </div>
         <Card.Body>
+        <Card.Img variant="top" src={LocationMap} />
           {companyInfo.map((data, index) => {
             return (
-              <Card.Text key={index} className="d-flex align-items-start mb-3">
+              <Card.Text key={index} className="d-flex align-items-start mb-3 mt-3">
                 <>
-                  <div className="icon-container d-flex align-items-center justify-content-center mr-3 mt-1">
+                  <span className="icon-container d-block mr-3">
                     <img src={data.icon} className="w-100" />
-                  </div>
-                  <p className="info-details mb-0">{data.info}</p>
+                  </span>
+                  {data.info}
                 </>
               </Card.Text>
             );

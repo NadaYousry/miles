@@ -4,17 +4,13 @@ import ModalComponent from "./../Modal";
 import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import "./style.css";
-const ImageCard = ({ image, index }) => {
+const ImageCard = ({ image }) => {
   const [openModal, setOpenModal] = useState(false);
   const handleCloseModal = () => setOpenModal(false);
   const handleOpenModal = () => setOpenModal(true);
-  useEffect(() => {
-    console.log(setOpenModal);
-  }, [setOpenModal]);
   return (
     <>
       <div
-        key={index}
         className="image-card-container"
         onClick={() => {
           handleOpenModal();
