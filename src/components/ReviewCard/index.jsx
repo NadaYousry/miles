@@ -11,7 +11,7 @@ const ReviewCard = ({ isMobileScreen, review, length }) => {
         <div className="icon-wrapper review d-flex align-items-center justify-content-center">
           <img src={review.reviewIcon} alt="review icon w-100" />
         </div>
-      </div>
+      </div> 
       <div className="col-10">
         <p className=" text-left mb-0">{`"${review.message}"`}</p>
         <span className="w-100 reviewer-name text-secondary text-left d-inline-block">
