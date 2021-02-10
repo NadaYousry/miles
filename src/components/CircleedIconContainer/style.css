@@ -4,14 +4,18 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+
+.icon-wrapper.green {
+  background-color: var(--green);
+}
 /* activity icons */
-.icon-wrapper:hover {
+.icon-wrapper.normal:hover {
+  cursor: pointer;
   transform: scale(1.05);
 }
-.icon-wrapper:hover + .icon-description {
+.icon-wrapper.normal:hover + .icon-description {
   color: var(--darkBlue);
 }
 .icon-description {

@@ -2,29 +2,33 @@ import React from "react";
 import ReviewCard from "../../components/ReviewCard";
 import ReviewWithProgress from "../../components/ReviewWithProgress";
 import ReviewIcon from "./../../assets/images/about/review.svg";
-const ReviewsPage = ({ isMobileScreen }) => {
+const ReviewPage = ({ isMobileScreen }) => {
   const allReviews = [
     {
       reviewIcon: ReviewIcon,
       reviewerName: "Peter Andrews",
+      date:"2 April 2021",
       message:
         "Attracts staff and students from IU with very nice courts forall round use.",
     },
     {
       reviewIcon: ReviewIcon,
       reviewerName: "Peter Andrews",
+      date:"2 April 2021",
       message:
         "Attracts staff and students from IU with very nice courts forall round use.",
     },
     {
       reviewIcon: ReviewIcon,
       reviewerName: "Peter Andrews",
+      date:"2 April 2021",
       message:
         "Attracts staff and students from IU with very nice courts forall round use.",
     },
     {
       reviewIcon: ReviewIcon,
       reviewerName: "Peter Andrews",
+      date:"2 April 2021",
       message:
         "Attracts staff and students from IU with very nice courts forall round use.",
     },
@@ -43,5 +47,4 @@ const ReviewsPage = ({ isMobileScreen }) => {
     </>
   );
 };
-
-export default ReviewsPage;
+export default ReviewPage;

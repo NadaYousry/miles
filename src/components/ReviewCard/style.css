@@ -1,17 +1,17 @@
-@import "./../../generalStyles/variables.css";
-
-.review {
-  background-color: var(--green) !important;
+@import "./../../generalStyles/variables";
+.reviews {
+  text-align: left;
 }
-
-.reviewer-name {
+.reviewer-secondary-text {
   font-size: 14px;
-  color: #9da3a8 !important;
+  color: var(--textGray) !important;
   letter-spacing: 0.7px;
 }
-
 @media screen and (max-width: 480px) {
   .reviewer-name {
     font-size: 12px;
+  }
+  .reviewer-secondary-text.date {
+    font-size: 0.8rem;
   }
 }

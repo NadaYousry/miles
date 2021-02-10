@@ -2,7 +2,7 @@ import React from "react";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import Star from "../Star";
 import "./style.css";
-const FiveStarsRating = () => {
+const FiveStarsRating = ({ratingNumber,peopleNumber}) => {
   const stars = [
     {
       starIcon: faStar,
@@ -27,7 +27,7 @@ const FiveStarsRating = () => {
   ];
   return (
     <div className="five-stars-container">
-      <span className="d-inline-block five-star-rating">4.5</span>
+      {peopleNumber&&<span className="d-inline-block five-star-rating">{ratingNumber}</span>}
       <div
         className={`star-icon-wrapper d-flex align-items-center justify-content-center mx-2`}
       >
@@ -37,7 +37,7 @@ const FiveStarsRating = () => {
             <Star theme={"dark-blue"}/></div>);
         })}
       </div>
-      <span className="d-inline-block five-star-text">(122)</span>
+      {ratingNumber&&<span className="d-inline-block five-star-text">({peopleNumber})</span>}
     </div>
   );
 };

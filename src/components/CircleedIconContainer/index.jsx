@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
-const CircledIconContainer = ({icon, name }) => {
+const CircledIconContainer = ({icon, name ,theme }) => {
   return (
     <>
-      <div className="icon-wrapper d-flex align-items-center justify-content-center">
+      <div className={`icon-wrapper d-flex align-items-center justify-content-center ${theme}`}>
         <img src={icon} alt={`{${name} w-100`} />
       </div>
-      <p className="icon-description">{name}</p>
+      {name&&<p className="icon-description">{name}</p>}
       </>
   );
 };

@@ -45,7 +45,7 @@ const AboutPage = ({ isMobileScreen }) => {
             !isMobileScreen ? "section-separator-right" : ""
           }`}
         >
-          <FiveStarsRating />
+          <FiveStarsRating ratingNumber={"4.5"} peopleNumber={"122"} />
           <p className="section-separator pb-4">
             Clubhouse Woodridge Tennis Academy offers amazing recently
             re-surfaced Tournament Ready courts servicing North Beach, Glenwood,
@@ -61,7 +61,7 @@ const AboutPage = ({ isMobileScreen }) => {
                     className=" d-flex align-items-center justify-content-center flex-column"
                     key={index}
                   >
-                    <CircledIconContainer icon={data.icon} name={data.name} />
+                    <CircledIconContainer theme={'normal'} icon={data.icon} name={data.name} />
                   </div>
                 );
               })}
