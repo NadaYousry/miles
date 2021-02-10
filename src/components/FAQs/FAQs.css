@@ -1,4 +1,4 @@
-@import "./../../generalStyles/fontStyles";
+@import "./../../generalStyles/variables.css";
 .card-title {
   letter-spacing: 0.52px;
   font-size: 20px;

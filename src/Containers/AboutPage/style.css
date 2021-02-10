@@ -1,4 +1,4 @@
-@import "./../../generalStyles/fontStyles";
+@import "./../../generalStyles/variables.css";
 .activity-icons {
   width: 80%;
 }

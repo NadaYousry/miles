@@ -1,4 +1,4 @@
-@import "./../../generalStyles/fontStyles";
+@import "./../../generalStyles/variables.css";
 
 .navbar {
   width: 100%;

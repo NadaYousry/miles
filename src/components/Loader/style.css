@@ -1,4 +1,4 @@
-@import "./../../generalStyles/fontStyles";
+@import "./../../generalStyles/variables.css";
 @keyframes progressring {
   0% {
     stroke-dasharray: 0% 275%;

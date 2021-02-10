@@ -108,7 +108,7 @@ const FeaturedCard = ({ isMobileScreen }) => {
                   </Card.Text>
                 </div>
                 <div className="col-lg-3 col-12 text-right feature-button p-0">
-                  <ButtonComponent text={'View'} theme={"green"}/>
+                  <ButtonComponent text={'View'} theme={"green"} share={false}/>
                 </div>
               </div>
             </Card.Body>

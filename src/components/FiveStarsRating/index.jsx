@@ -1,6 +1,5 @@
-import { faGrinStars, faStar } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import Star from "../Star";
 import "./style.css";
 const FiveStarsRating = () => {
@@ -35,7 +34,7 @@ const FiveStarsRating = () => {
         {stars.map((star, index) => {
           return(
             <div key={index}>
-            <Star theme={"blue"}/></div>);
+            <Star theme={"dark-blue"}/></div>);
         })}
       </div>
       <span className="d-inline-block five-star-text">(122)</span>

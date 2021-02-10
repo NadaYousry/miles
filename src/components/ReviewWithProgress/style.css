@@ -1,4 +1,4 @@
-@import "./../../generalStyles/fontStyles";
+@import "./../../generalStyles/variables.css";
 
 .five-stars-with-progress-container {
   margin-bottom: 1%;

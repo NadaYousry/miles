@@ -1,7 +1,7 @@
+import React, {  useState } from "react";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ModalComponent from "./../Modal";
-import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import "./style.css";
 const ImageCard = ({ image }) => {

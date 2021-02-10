@@ -1,4 +1,4 @@
-@import "./../../generalStyles/fontStyles";
+@import "./../../generalStyles/variables.css";
 .modal.fade .modal-dialog {
   transform: none !important;
 }

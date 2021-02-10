@@ -1,11 +1,7 @@
 import React, { Suspense } from "react";
-import { Tabs, Tab, Nav } from "react-bootstrap";
-import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
-import history from "./../../app/history";
-import AboutPage from "../AboutPage";
+import { Nav } from "react-bootstrap";
+import { NavLink, Redirect, Route, Switch } from "react-router-dom";
 import * as LazyComponents from "./../../utlis/LazyLoading";
-import GalleryPage from "../GalleryPage";
-import ReviewsPage from "../ReviewsPage";
 import "./style.css";
 import Loader from "../../components/Loader";
 const BodyContainer = ({ isMobileScreen }) => {
@@ -22,50 +18,57 @@ const BodyContainer = ({ isMobileScreen }) => {
           </div>
           <div className="row  mb-5">
             <div className="col-12">
-                <Nav className={'navbar'}>
-                  <NavLink
-                    activeClassName="active"
-                    to={`/about`}
-                    className="nav-link"
-                  >
-                    About
-                  </NavLink>
-                  <NavLink
-                    activeClassName="active"
-                    to={`/group-lessons`}
-                    className="nav-link"
-                  >
-                    Group Lesson
-                  </NavLink>
-                  <NavLink
-                    activeClassName="active"
-                    to={`/private-lessons`}
-                    className="nav-link"
-                  >
-                    Private Lesson
-                  </NavLink>
-                  <NavLink
-                    activeClassName="active"
-                    to={`/gallery`}
-                    className="nav-link"
-                  >
-                    gallery
-                  </NavLink>
-                  <NavLink
-                    activeClassName="active"
-                    to={`/gallfaqery`}
-                    className="nav-link"
-                  >
-                    FAQ
-                  </NavLink>
-                </Nav>
+              <Nav className={"navbar"}>
+                <NavLink
+                  activeClassName="active"
+                  to={`/about`}
+                  className="nav-link"
+                >
+                  About
+                </NavLink>
+                <NavLink
+                  activeClassName="active"
+                  to={`/group-lessons`}
+                  className="nav-link"
+                >
+                  Group Lesson
+                </NavLink>
+                <NavLink
+                  activeClassName="active"
+                  to={`/private-lessons`}
+                  className="nav-link"
+                >
+                  Private Lesson
+                </NavLink>
+                <NavLink
+                  activeClassName="active"
+                  to={`/reviews`}
+                  className="nav-link"
+                >
+                  reviews
+                </NavLink>
+                <NavLink
+                  activeClassName="active"
+                  to={`/gallery`}
+                  className="nav-link"
+                >
+                  gallery
+                </NavLink>
+                <NavLink
+                  activeClassName="active"
+                  to={`/faq`}
+                  className="nav-link"
+                >
+                  FAQ
+                </NavLink>
+              </Nav>
               <Switch>
                 <Route path={`/about`}>
                   <Suspense fallback={<Loader />}>
                     <LazyComponents.AboutPage isMobileScreen={isMobileScreen} />
                   </Suspense>
                 </Route>
-                <Route path={`/review`}>
+                <Route path={`/reviews`}>
                   <Suspense fallback={<Loader />}>
                     <LazyComponents.ReviewsPage
                       isMobileScreen={isMobileScreen}
@@ -77,6 +80,12 @@ const BodyContainer = ({ isMobileScreen }) => {
                     <LazyComponents.GalleryPage />
                   </Suspense>
                 </Route>
+                <Route path={`/private-lessons`}>
+                  <Suspense fallback={<Loader />}>
+                    <LazyComponents.PrivateLessonsPage isMobileScreen={isMobileScreen}/>
+                  </Suspense>
+                </Route>
+                <Redirect exact from="/" to="about" />
               </Switch>
             </div>
           </div>

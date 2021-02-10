@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Redirect } from "react-router";
 import Carousels from "../../components/Carousel";
 import NavBar from "../../components/Navbar";
 import BodyContainer from "../BodyContainer";

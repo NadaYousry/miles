@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Accordion, Card } from "react-bootstrap";
-import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faMinus, faPlus, faQuestion } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./style.css";
 const AccordionComponent = ({ data }) => {
@@ -32,7 +32,13 @@ const AccordionComponent = ({ data }) => {
               <FontAwesomeIcon icon={faPlus} className=" mr-2" />
             )}
           </span>
-          <h3 className="my-0">{data.question}</h3>
+          <h3 className="my-0">
+            {data.question}
+            <FontAwesomeIcon
+              icon={faQuestion}
+              className={"ml-2 question-icon"}
+            />
+          </h3>
         </Accordion.Toggle>
         <Accordion.Collapse eventKey={`${data.id}`}>
           <Card.Body>{data.answer}</Card.Body>
