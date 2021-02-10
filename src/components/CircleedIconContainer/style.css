@@ -28,4 +28,8 @@
     width: 45px;
     height: 45px;
   }
+  .icon-wrapper.review {
+    width: 35px;
+    height: 35px;
+  }
 }

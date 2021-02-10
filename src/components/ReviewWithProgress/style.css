@@ -3,11 +3,6 @@
 .five-stars-with-progress-container {
   margin-bottom: 1%;
 }
-.five-star-with-progress-icon {
-  color: var(--green);
-  font-size: 14px;
-}
-
 .five-star-with-progress-rating {
   font-family: var(--boldFont);
   font-size: 54px;
@@ -41,9 +36,6 @@
   }
   .progress-container span {
     font-size: 14px;
-  }
-  .five-stars-with-progress-container {
-    margin-bottom: 10%;
   }
   .five-star-with-progress-rating {
     font-size: 40px;

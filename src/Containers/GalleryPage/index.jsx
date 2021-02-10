@@ -1,13 +1,13 @@
 import React from "react";
 import ImageCard from "../../components/ImageCard";
-import Image1 from "./../../assets/images/1.png";
-import Image2 from "./../../assets/images/2.png";
-import Image3 from "./../../assets/images/3.png";
-import Image4 from "./../../assets/images/4.png";
-import Image5 from "./../../assets/images/5.png";
-import Image6 from "./../../assets/images/6.png";
-import Image7 from "./../../assets/images/7.png";
-const GallaryPage = ({ isMobileScreen }) => {
+import Image1 from "./../../assets/images/gallery/1.png";
+import Image2 from "./../../assets/images/gallery/2.png";
+import Image3 from "./../../assets/images/gallery/3.png";
+import Image4 from "./../../assets/images/gallery/4.png";
+import Image5 from "./../../assets/images/gallery/5.png";
+import Image6 from "./../../assets/images/gallery/6.png";
+import Image7 from "./../../assets/images/gallery/7.png";
+const GalleryPage = ({ isMobileScreen }) => {
   const images = [
     {
       image: Image1,
@@ -46,4 +46,4 @@ const GallaryPage = ({ isMobileScreen }) => {
   );
 };
 
-export default GallaryPage;
+export default GalleryPage;

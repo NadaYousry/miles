@@ -1,34 +1,30 @@
-import {  faStar } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { ProgressBar } from "react-bootstrap";
-import "./ReviewWithProgress.css";
+import FiveStarsRating from "../FiveStarsRating";
+import Star from "../Star";
+import "./style.css";
 const ReviewWithProgress = () => {
   const stars = [
     {
       startRate: "5",
-      starIcon: faStar,
       value: 80,
     },
     {
       startRate: "4",
-      starIcon: faStar,
       value: 40,
     },
     {
       startRate: "3",
-      starIcon: faStar,
       value: 5,
     },
     {
       startRate: "2",
-      starIcon: faStar,
       value: 2,
     },
 
     {
       startRate: "1",
-      starIcon: faStar,
       value: 20,
     },
   ];
@@ -53,15 +49,13 @@ const ReviewWithProgress = () => {
             4.5
           </span>
           <div className="w-100">
-            {stars.map((data,index) => {
-              return (
-                <FontAwesomeIcon
-                  icon={faStar}
-                  className="five-star-with-progress-icon mx-0"
-                  key={index}
-                />
-              );
-            })}
+            <div
+              className={`star-icon-wrapper d-flex align-items-center justify-content-center`}
+            >
+              {stars.map((data, index) => {
+                return <Star theme={"green"} />;
+              })}
+            </div>
           </div>
           <span className="d-inline-block five-star-with-progress-text w-100">
             125 Reviews

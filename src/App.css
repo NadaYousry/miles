@@ -23,6 +23,9 @@ a:hover {
 .section-separator-right {
   border-right: 1px solid var(--lightGray);
 }
+.section-separator-top:first-of-type {
+  border-top: 1px solid var(--lightGray);
+}
 .view-all-link {
   margin-top: 5%;
 }

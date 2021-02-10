@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './Containers/HomePage/Home';
+import Home from './Containers/HomePage';
 import { useEffect } from 'react';
 
 function App() {

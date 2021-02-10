@@ -1,0 +1,22 @@
+@import "./../../generalStyles/fontStyles";
+
+.star-icon {
+  font-size: 14px;
+}
+.star-icon.green {
+  color: var(--green);
+}
+.star-icon.blue {
+  color: var(--green);
+}
+.star-icon.blue {
+  color: var(--darkBlue);
+  font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  .blue {
+    margin-bottom: 10%;
+    font-size: 40px;
+  }
+}

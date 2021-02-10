@@ -1,7 +1,8 @@
 import React from "react";
 import { Tabs, Tab } from "react-bootstrap";
 import AboutPage from "../AboutPage";
-import GallaryPage from "../GallaryPage";
+import GalleryPage from "../GalleryPage";
+import ReviewPage from "../ReviewsPage";
 import "./style.css";
 const BodyContainer = ({ isMobileScreen }) => {
   return (
@@ -20,14 +21,17 @@ const BodyContainer = ({ isMobileScreen }) => {
               <Tab eventKey="about" title="about">
                 <AboutPage isMobileScreen={isMobileScreen} />
               </Tab>
-              <Tab eventKey="groupLesson" title="groupLesson">
+              <Tab eventKey="groupLesson" title="group Lesson">
                 group Lessons
               </Tab>
+              <Tab eventKey="PrivateLessons" title="Private Lessons">
+                Private Lessons
+              </Tab>
               <Tab eventKey="reviews" title="reviews">
-                reviews
+                <ReviewPage isMobileScreen={isMobileScreen}/>
               </Tab>
               <Tab eventKey="gallery" title="gallery">
-                <GallaryPage isMobileScreen={isMobileScreen} />
+                <GalleryPage isMobileScreen={isMobileScreen} />
               </Tab>
               <Tab eventKey="faq" title="faq">
                 faq

@@ -1,0 +1,17 @@
+@import "./../../generalStyles/fontStyles";
+
+.review {
+  background-color: var(--green) !important;
+}
+
+.reviewer-name {
+  font-size: 14px;
+  color: #9da3a8 !important;
+  letter-spacing: 0.7px;
+}
+
+@media screen and (max-width: 480px) {
+  .reviewer-name {
+    font-size: 12px;
+  }
+}

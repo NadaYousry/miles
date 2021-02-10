@@ -1,17 +1,16 @@
 import React from "react";
-import FiveStartsRating from "../../components/FiveStartsRating";
+import FiveStarsRating from "../../components/FiveStarsRating";
 import CourtsIcon from "./../../assets/images/about/5courts.svg";
 import GymIcon from "./../../assets/images/about/gym.svg";
 import SwimmingIcon from "./../../assets/images/about//swim.svg";
 import CafeIcon from "./../../assets/images/about/cafe.svg";
 import CyclingIcon from "./../../assets/images/about/cycling.svg";
 import DangerAlertIcon from "./../../assets/images/about/danger.svg";
-import ReviewIcon from "./../../assets/images/about/review.svg";
 import MapCard from "../../components/MapCard";
 import AlertComponent from "../../components/Alert";
 import CircledIconContainer from "../../components/CircleedIconContainer";
-import ReviewCard from "../../components/ReviewCard";
-import ReviewWithProgress from "../../components/ReviewWithProgress/ReviewWithProgress";
+import ReviewCardContainer from "../../components/ReviewCardContainer";
+import ReviewWithProgress from "../../components/ReviewWithProgress";
 import FeaturedCard from "../../components/FeaturedCard";
 import FAQs from "../../components/FAQs/FAQs";
 import "./style.css";
@@ -46,7 +45,7 @@ const AboutPage = ({ isMobileScreen }) => {
             !isMobileScreen ? "section-separator-right" : ""
           }`}
         >
-          <FiveStartsRating />
+          <FiveStarsRating />
           <p className="section-separator pb-4">
             Clubhouse Woodridge Tennis Academy offers amazing recently
             re-surfaced Tournament Ready courts servicing North Beach, Glenwood,
@@ -82,7 +81,7 @@ const AboutPage = ({ isMobileScreen }) => {
         </div>
         <div className="col-12 col-md-12 col-lg-12">
           <h2 className="sub-heading text-left mb-3">Reviews</h2>
-          <ReviewCard reviewIcon={ReviewIcon} isMobileScreen={isMobileScreen} reviewerName={"Peter Andrews"} reviewMessage={"Attracts staff and students from IU with very nice courts forall round use."}/>
+          <ReviewCardContainer  isMobileScreen={isMobileScreen} />
         </div>
       </section>
       <section className="row section-separator p-0 pb-5 mb-5">
