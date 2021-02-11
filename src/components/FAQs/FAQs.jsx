@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import AccordionComponent from "../Accordion";
 import "./FAQs.css";
 const FAQs = ({isMobileScreen}) => {
@@ -41,7 +42,8 @@ const FAQs = ({isMobileScreen}) => {
       <div className="row view-all-link ">
         <div className="col-12">
           <div className="link text-right w-100">
-            <p className={`${isMobileScreen?"text-center":"text-right"}`}>view all</p>
+            <p className={`${isMobileScreen?"text-center":"text-right"}`}>
+              <Link to="/faq">view all</Link></p>
           </div>
         </div>
       </div>

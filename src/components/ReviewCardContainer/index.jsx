@@ -2,6 +2,7 @@ import React from "react";
 import ReviewCard from "./../ReviewCard";
 import "./style.css";
 import ReviewIcon from "./../../assets/images/about/review.svg";
+import { Link } from "react-router-dom";
 const ReviewCardContainer = ({ isMobileScreen }) => {
   const reviewData = [
     {
@@ -24,7 +25,7 @@ const ReviewCardContainer = ({ isMobileScreen }) => {
         <div className="col-12">
           <div className="link text-right w-100">
             <p className={`${isMobileScreen ? "text-center" : "text-right"}`}>
-              view all
+             <Link to='./reviews'>view all</Link>
             </p>
           </div>  
         </div>

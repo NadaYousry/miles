@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import logo from "./../../assets/images/navbar/logo.svg";
 import { Nav } from "react-bootstrap";
 import "./style.css";
+import { NavLink } from "react-router-dom";
 const NavBar = ({isMobileScreen}) => {
  
   return (
@@ -13,20 +14,19 @@ const NavBar = ({isMobileScreen}) => {
       className="navbar-container"
     >
       <div className="container">
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" id="toggle"/>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav navbar" id="toggle"/>
         {isMobileScreen&&(
         <Navbar.Brand
         
-          href="#home"
-          className={`logo-container pt-2 m-0 d-flex align-items-center justify-content-center`}
+          className={`mobile-screen-logo logo-container pt-2 m-0 d-flex align-items-center justify-content-center`}
         >
           <img src={logo} alt="logo" className="w-100" />
         </Navbar.Brand>
           )}
         <Navbar.Collapse id="responsive-navbar-nav d-flex align-items-center justify-content-center">
           <Nav className="w-75 pt-4 d-flex align-items-center justify-content-around m-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about-us">Book Private Lessons</Nav.Link>
+            <NavLink to="/about">Home</NavLink>
+            <NavLink to="./private-lessons">Book Private Lessons</NavLink>
         {!isMobileScreen&&(
         <Navbar.Brand
         
@@ -36,8 +36,8 @@ const NavBar = ({isMobileScreen}) => {
           <img src={logo} alt="logo" className="w-100" />
         </Navbar.Brand>
           )}
-            <Nav.Link href="#pricing">school program</Nav.Link>
-            <Nav.Link href="#pricing">About us</Nav.Link>
+            <NavLink to="./group-lessons">school program</NavLink>
+            <NavLink to="./about">About us</NavLink>
           </Nav>
         </Navbar.Collapse>
 
