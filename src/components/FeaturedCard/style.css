@@ -51,6 +51,9 @@
   .feature-info-container .description-info {
     order: 2;
   }
+  .feature-info-container .description-info p {
+    font-size: 0.7rem;
+  }
   .feature-info-container .feature-button {
     order: 4;
   }

@@ -18,7 +18,7 @@ const BodyContainer = ({ isMobileScreen }) => {
           </div>
           <div className="row  mb-5">
             <div className="col-12">
-              <Nav className={"navbar"}>
+              <Nav className={`${isMobileScreen?"px-0":""} navbar`}>
                 <NavLink
                   activeClassName="active"
                   to={`/about`}

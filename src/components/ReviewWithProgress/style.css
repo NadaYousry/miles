@@ -40,4 +40,7 @@
   .five-star-with-progress-rating {
     font-size: 40px;
   }
+  .five-star-with-progress-text {
+    font-size: 0.8rem;
+  }
 }
