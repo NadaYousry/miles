@@ -1,5 +1,6 @@
 import React from "react";
 import {  Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import BadgeComponent from "../Badge";
 import ButtonComponent from "../Button";
 import TimeIcon from "./../../assets/images/about/badge-time-icon.svg";
@@ -119,7 +120,7 @@ const FeaturedCard = ({ isMobileScreen }) => {
         <div className="col-12">
           <div className="link text-right w-100">
             <p className={`${isMobileScreen ? "text-center" : "text-right"}`}>
-              view all
+             <Link to="./"> view all</Link>
             </p>
           </div>
         </div>

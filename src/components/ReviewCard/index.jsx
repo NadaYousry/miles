@@ -46,8 +46,8 @@ const ReviewCard = ({ isMobileScreen, key, review, length }) => {
         </span>
       </div>  
       {isMobileScreen&&<div className="col-2"></div>}
-      <div className="col-10 col-md-12 col-lg-2 d-flex  flex-column justify-content-end">
-        <span>
+      <div className={`col-10 col-md-12 col-lg-2 d-flex  flex-column justify-content-end ${!isMobileScreen?" align-items-end":" align-items-start"}`}>
+        <span className=" d-flex  flex-row justify-content-end">
         {stars.map((star, index) => {
           return(
             <span key={index}>
@@ -55,7 +55,7 @@ const ReviewCard = ({ isMobileScreen, key, review, length }) => {
         })}
         </span>
         
-        <span className="w-100 reviewer-secondary-text date d-inline-block mt-2">{review.date}</span>
+        <span className={`${isMobileScreen? " text-left":"text-right"}w-100 reviewer-secondary-text date d-inline-block mt-2`}>{review.date}</span>
       </div>
     </div>
   );
