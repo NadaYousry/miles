@@ -54,7 +54,7 @@ const PrivateLessonCard = ({ lesson, isMobileScreen }) => {
         </Card.Header>
         <Card.Body>
           <div className="row">
-            <div className="col-12 col-lg-2 d-flex align-items-center">
+            <div className="col-12 col-lg-2 col-md-12 d-flex align-items-center">
               {!isMobileScreen && (
                 <div className="private-lessons-image-container d-flex align-items-center justify-content-center">
                   <div className="image-wrapper">
@@ -67,12 +67,12 @@ const PrivateLessonCard = ({ lesson, isMobileScreen }) => {
                 </div>
               )}
             </div>
-            <div className="col-12 col-lg-7 description d-flex align-items-center">
+            <div className="col-12 col-lg-6 col-md-12 description d-flex align-items-center">
               <Card.Text className={`private-lessons-description ${isMobileScreen?"mb-3":""}`}>
                 {lesson.description}
               </Card.Text>
             </div>
-            <div className={`col-12 col-lg-3 price-and-button  d-flex flex-column`}>
+            <div className={`col-12 col-lg-4 col-md-12 price-and-button  d-flex flex-column`}>
               <span className={`private-lessons-price  mb-2 ${isMobileScreen?"mb-3 text-center":""}`}>
                 {lesson.price}
               </span>

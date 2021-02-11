@@ -6,7 +6,7 @@ const ButtonComponent = ({ text, theme,share }) => {
   return (
     <Button variant="primary " className={`${theme}-btn ml-auto btn ${theme} ${share?"share-btn":""}`}>
       {share&&
-      <span><img src={ShareIcon}/></span>
+      <span className="mr-2"><img src={ShareIcon}/></span>
     }
       {text}
     </Button>

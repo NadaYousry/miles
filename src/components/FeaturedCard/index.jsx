@@ -3,8 +3,6 @@ import {  Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import BadgeComponent from "../Badge";
 import ButtonComponent from "../Button";
-import TimeIcon from "./../../assets/images/about/badge-time-icon.svg";
-import DateIcon from "./../../assets/images/about/date-icon.svg";
 import "./style.css";
 const FeaturedCard = ({ isMobileScreen }) => {
   const featuredData = [
@@ -59,30 +57,26 @@ const FeaturedCard = ({ isMobileScreen }) => {
           >
             <Card.Body>
               <div className="row feature-info-container d-flex">
-                <div className="col-12 col-6 col-md-6 title-info">
-                  <div className="row">
-                    <div className="col-12 col-lg-6 col-md-12">
-                      <Card.Title>{data.name}</Card.Title>
-                    </div>
-                    <div className="col-12 col-lg-6 col-md-12">
+                <div className="col-12 col-lg-7 col-md-7 title-info">
+                  <div className="row flex-wrap">
+                      <Card.Title className="mr-2 mb-0">{data.name}</Card.Title>
                       {data.notes && (
                         <BadgeComponent
-                          icon={null}
+                          type={''}
                           text={data.notes}
                           theme={"orange"}
                         />
                       )}
-                    </div>
                   </div>
                   <div className="col-12 p-0">
                     <Card.Text>
-                        {data.type}
+                        <span className="feature-type">{data.type}</span>
                       -
-                        {data.for}
+                        <span className="feature-type green">{data.for}</span>
                     </Card.Text>
                   </div>
                 </div>
-                <div className="col-12 col-6 col-md-6 date-and-time-info">
+                <div className="col-12 col-lg-5 col-md-5 date-and-time-info">
                   <div
                     className={`time-date-container row ${
                       !isMobileScreen
@@ -91,12 +85,12 @@ const FeaturedCard = ({ isMobileScreen }) => {
                     }`}
                   >
                     <BadgeComponent
-                      icon={TimeIcon}
+                      type={'time'}
                       text={data.time}
                       theme={"gray"}
                     />
                     <BadgeComponent
-                      icon={DateIcon}
+                      type={'date'}
                       text={data.date}
                       theme={"gray"}
                     />

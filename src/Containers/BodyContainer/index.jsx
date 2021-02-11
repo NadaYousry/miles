@@ -85,6 +85,11 @@ const BodyContainer = ({ isMobileScreen }) => {
                     <LazyComponents.PrivateLessonsPage isMobileScreen={isMobileScreen}/>
                   </Suspense>
                 </Route>
+                <Route path={`/group-lessons`}>
+                  <Suspense fallback={<Loader />}>
+                    <LazyComponents.GroupLessonsPage isMobileScreen={isMobileScreen}/>
+                  </Suspense>
+                </Route>
                 <Redirect exact from="/" to="about" />
               </Switch>
             </div>

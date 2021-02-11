@@ -9,7 +9,6 @@
   justify-content: space-around;
 }
 .share-btn img {
-  display: inline-block;
   margin-right: 6%;
 }
 /* green button */
@@ -71,7 +70,6 @@
 /* white button */
 
 .white-btn {
-  display: inline-block !important;
   padding: 2% 5%;
   background-color: var(--white);
   border-color: var(--lightGray);
@@ -132,6 +130,45 @@
 .btn-primary.black:not(:disabled):not(.disabled):active:focus {
   box-shadow: 0 0 0 0.2rem var(--black) !important;
   color: var(--white);
+}
+
+/* orange button */
+
+.orange-btn {
+  /* width: 50%; */
+  display: inline-block !important;
+  padding: 2% 5%;
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: var(--white);
+}
+.orange-btn:hover {
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: var(--white);
+}
+.orange-btn:focus {
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: var(--white);
+  outline: none;
+  box-shadow: 0 0 0 0.2rem var(--orange);
+}
+.btn-primary.orange:not(:disabled):not(.disabled):active,
+.btn-primary.orange:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: var(--lightGray);
+  border-color: var(--lightGray);
+  color: var(--white);
+}
+.btn-primary.orange:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 0.2rem var(--orange) !important;
+  color: var(--white);
+}
+@media screen and (max-width: 786px) {
+  .btn.green-btn {
+    width: 100% !important;
+  }
 }
 @media screen and (max-width: 480px) {
   .btn {

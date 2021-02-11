@@ -12,6 +12,9 @@ export const Home = React.lazy(() =>
 export const PrivateLessonsPage = React.lazy(() =>
   import("./../Containers/PrivateLessonsPage")
 );
+export const GroupLessonsPage = React.lazy(() =>
+  import("./../Containers/GroupLessonsPage")
+);
 export const ReviewsPage = React.lazy(() =>
   import("./../Containers/ReviewsPage")
 );

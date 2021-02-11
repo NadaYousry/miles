@@ -6,6 +6,11 @@
   letter-spacing: 1px;
   line-height: 1.5rem;
 }
+.feature-info-container .card-text {
+}
+.time-date-container {
+  flex-wrap: nowrap;
+}
 .feature-container p {
   text-align: left;
 }
@@ -21,8 +26,8 @@
   color: var(--textGray);
   font-weight: lighter;
 }
-@media screen and (max-width: 480px) {
-  .view-btn {
+@media screen and (max-width: 425px) {
+  .view-btn.green {
     width: 100% !important;
   }
   .feature-description {
@@ -62,7 +67,7 @@
     width: 100%;
   }
   .time-date-container .badge {
-    width: 48%;
+    width: 50%;
     border-radius: 6px;
     padding: 2% 2%;
   }

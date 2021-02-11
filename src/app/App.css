@@ -6,7 +6,7 @@
 }
 p {
   text-align: left;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.01rem;
   line-height: 1.7rem;
   -webkit-hyphens: none;
   -moz-hyphens: none;

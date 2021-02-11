@@ -28,9 +28,14 @@
 .navbar-light .navbar-toggler-icon {
   background-image: url("./../../assets/images/navbar/collapse.svg") !important;
 }
+@media screen and (max-width: 786px) {
+  .navbar-expand-lg > .container {
+    padding: 2% 0%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .navbar-expand-lg > .container {
-    position: relative;
     padding: 5% 0%;
   }
   .navbar-container {

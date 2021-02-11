@@ -1,0 +1,120 @@
+@import "./../../generalStyles/variables.css";
+
+.group-lessons-container {
+  text-align: left;
+}
+.group-lessons-container .card-body {
+  padding: 0.5rem 1rem;
+}
+.group-lessons-container .btn {
+  border-radius: 8px;
+  font-size: 12px;
+  font-family: var(--boldFont);
+  margin-bottom: 6%;
+  text-transform: initial;
+  padding: 4% 7%;
+}
+.group-lessons-container .btn.share-btn {
+  padding: 4% 4%;
+}
+
+.group-lessons-container .card {
+  border: 1px solid var(--borderGray);
+}
+.group-lessons-container .card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--borderGray);
+  background-color: var(--white);
+}
+
+.group-lessons-image-container {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--borderGray);
+}
+.group-lessons-image-container .image-wrapper {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+.group-lessons-description {
+  font-size: 0.9rem;
+  font-family: var(--boldFont);
+  color: var(--black);
+}
+.group-for {
+  font-size: 0.8rem;
+  color: var(--orange);
+  font-family: var(--boldFont);
+  line-height: normal;
+  word-spacing: 1px;
+}
+.place-name {
+  color: var(--textGray);
+  font-size: 0.9rem;
+}
+.group-lessons-trainner-name,
+.group-lessons-price {
+  font-family: var(--boldFont);
+  font-size: 1.1rem;
+}
+.group-lessons-price {
+  display: block;
+  text-align: right;
+}
+.heading-info {
+  width: 40%;
+}
+.group-lessons-container .date-and-time-info {
+  width: 60%;
+}
+@media screen and (max-width: 425px) {
+  .group-lessons-container .card-header {
+    flex-direction: column !important;
+    padding-bottom: 2%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mobile-screen {
+    display: block;
+  }
+  .place-name {
+    display: none;
+  }
+  .heading-info {
+    width: 100%;
+    margin-bottom: 6%;
+  }
+  .group-lessons-container .date-and-time-info {
+    width: 100%;
+  }
+  .group-for {
+    font-size: 0.7rem;
+  }
+  .group-lessons-container {
+    text-align: center;
+  }
+  .group-lessons-container .btn {
+    width: 100% !important;
+  }
+  .group-lessons-container .btn.share-btn {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .group-lessons-description {
+    font-size: 12px;
+    font-family: var(--regularFont);
+  }
+  .group-lessons-price {
+    font-size: 1.5rem;
+  }
+  .group-lessons-container .desktop-screen {
+    display: none;
+  }
+}
