@@ -7,12 +7,14 @@
 p {
   text-align: left;
   letter-spacing: 0.01rem;
-  line-height: 1.7rem;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
   text-transform: capitalize;
+}
+.card {
+  border-color: var(--borderGray);
 }
 a:hover {
   color: var(--darkBlue);

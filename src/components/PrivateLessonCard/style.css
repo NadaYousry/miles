@@ -56,7 +56,7 @@
 }
 @media screen and (max-width: 786px) {
   .private-lessons-container {
-    text-align: center;
+    text-align: left;
   }
   .private-lessons-container .btn {
     width: 100% !important;
@@ -74,5 +74,11 @@
 
   .private-lessons-price {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 425) {
+  .private-lessons-container {
+    text-align: center;
   }
 }

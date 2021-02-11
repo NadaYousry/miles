@@ -1,22 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { Redirect } from "react-router";
-import Carousels from "../../components/Carousel";
-import NavBar from "../../components/Navbar";
 import BodyContainer from "../BodyContainer";
+import HeaderContainer from "../HeaderContainer";
 const Home = () => {
   const [isMobileScreen, setIsMobileScreen] = useState(false);
   const [currentWidth, setCurrentWidth] = useState(0);
   useEffect(() => {
-    window.addEventListener("load", (e) => {
-      if (window.innerWidth < 892) {
-        setIsMobileScreen(true);
-      } else {
-        setIsMobileScreen(false);
-      }
-    });
+    setCurrentWidth(window.innerWidth);
+    if (window.outerWidth < 768) {
+      setIsMobileScreen(true);
+    } else {
+      setIsMobileScreen(false);
+    }
+
     window.addEventListener("resize", (e) => {
       setCurrentWidth(window.innerWidth);
-      if (window.innerWidth < 892) {
+      if (window.outerWidth < 768) {
         setIsMobileScreen(true);
       } else {
         setIsMobileScreen(false);
@@ -25,8 +23,7 @@ const Home = () => {
   }, [currentWidth]);
   return (
     <>
-      <NavBar isMobileScreen={isMobileScreen} />
-      <Carousels isMobileScreen={isMobileScreen} />
+      <HeaderContainer isMobileScreen={isMobileScreen} />
       <BodyContainer isMobileScreen={isMobileScreen} />
     </>
   );

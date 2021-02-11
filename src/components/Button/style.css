@@ -101,9 +101,11 @@
 /* black */
 
 .black-btn {
-  /* width: 50%; */
+  font-size: 12px;
+  font-family: var(--boldFont);
   display: inline-block !important;
-  padding: 2% 5%;
+  padding: 4% 7%;
+  border-radius: 8px;
   background-color: var(--black);
   border-color: var(--black);
   color: var(--white);
@@ -173,5 +175,9 @@
 @media screen and (max-width: 480px) {
   .btn {
     width: 100% !important;
+  }
+
+  .share-btn {
+    justify-content: center;
   }
 }

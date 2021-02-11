@@ -22,7 +22,7 @@
   border: 1px solid var(--borderGray);
 }
 .group-lessons-container .card-header {
-  padding: 0.75rem 1.25rem;
+  padding: 1.5rem 1.25rem;
   margin-bottom: 0;
   border-bottom: 1px solid var(--borderGray);
   background-color: var(--white);
@@ -42,7 +42,7 @@
   box-sizing: content-box;
 }
 .group-lessons-description {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-family: var(--boldFont);
   color: var(--black);
 }
@@ -70,15 +70,27 @@
   width: 40%;
 }
 .group-lessons-container .date-and-time-info {
-  width: 60%;
+  width: 40%;
+  margin-left: auto;
+}
+@media screen and (max-width: 1024px) {
+  .group-lessons-container .date-and-time-info {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 786px) {
+  .group-lessons-container .mobile-screen {
+    display: none;
+  }
 }
 @media screen and (max-width: 425px) {
+  .mobile-screen {
+    display: block !important;
+  }
   .group-lessons-container .card-header {
     flex-direction: column !important;
     padding-bottom: 2%;
   }
-}
-@media screen and (max-width: 425px) {
   .mobile-screen {
     display: block;
   }

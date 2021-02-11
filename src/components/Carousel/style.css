@@ -65,6 +65,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .carousel-indicators {
+    margin-bottom: 6% !important;
+  }
+}
+@media screen and (max-width: 768px) {
   #home.container {
     padding: 0;
     border-radius: 0;

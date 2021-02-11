@@ -12,12 +12,13 @@ const ReviewCardContainer = ({ isMobileScreen }) => {
         "Attracts staff and students from IU with very nice courts forall round use.",
     }
   ];
-  console.log(reviewData);
   return (
     <div className="review-container">
       {reviewData.map((review, index) => {
         return (
-          <ReviewCard isMobileScreen={isMobileScreen} review={review} key={index} length={reviewData.length}/>
+          <div key={index}>
+          <ReviewCard isMobileScreen={isMobileScreen} review={review}  length={reviewData.length}/>
+          </div>
         );
       })}
 

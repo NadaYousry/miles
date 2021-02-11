@@ -1,7 +1,7 @@
 import React from "react";
 import GroupLessonCard from "../GroupLessonCard";
 import DontFoundYouNeedCard from "../DontFoundYouNeedCard";
-import TraineeImage from "./../../assets/images/private-lessons/Bitmap.png";
+import SelectMenuComponent from "../SelectMenu";
 import "./style.css";
 const GroupLessonCardContainer = ({ isMobileScreen }) => {
   const privateLessons = [
@@ -83,8 +83,24 @@ const GroupLessonCardContainer = ({ isMobileScreen }) => {
       time: "4:00pm - 5:00pm",
     },
   ];
+  
+  const filterOptions=[
+    {
+      option:"Kids 4-7",
+    },
+    {
+      option:"Junior 8-12",
+    },
+    {
+      option:"Teens 13-17",
+    },
+    {
+      option:"Adults",
+    }
+  ];
   return (
     <div className={"private-lessons-container"}>
+      <SelectMenuComponent filters={filterOptions} />
       {privateLessons.map((lesson, index) => {
         return (
           <div key={index}>
