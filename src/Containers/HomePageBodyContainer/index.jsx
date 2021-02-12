@@ -4,7 +4,7 @@ import { NavLink, Redirect, Route, Switch } from "react-router-dom";
 import * as LazyComponents from "./../../utlis/LazyLoading";
 import "./style.css";
 import Loader from "../../components/Loader";
-const BodyContainer = ({ isMobileScreen }) => {
+const HomePageBodyContainer = ({ isMobileScreen }) => {
   return (
     <>
       <div className="home-container container py-5 px-4 ">
@@ -100,4 +100,4 @@ const BodyContainer = ({ isMobileScreen }) => {
   );
 };
 
-export default BodyContainer;
+export default HomePageBodyContainer;

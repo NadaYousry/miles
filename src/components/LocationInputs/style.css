@@ -1,0 +1,31 @@
+.address-form .form-control {
+  max-height: initial !important;
+}
+.input-wrapper {
+  padding: 2% 2%;
+  border-bottom: 1px solid var(--borderGray);
+}
+.address-input,
+.address-input:focus {
+  background-color: transparent;
+  border: none !important;
+  outline: none;
+}
+.address-input::placeholder {
+  color: #d8d8d8;
+}
+
+.address-label {
+  font-family: var(--boldFont);
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .address-label {
+    font-size: 0.7rem;
+  }
+  .address-input {
+    font-size: 0.9rem;
+  }
+}

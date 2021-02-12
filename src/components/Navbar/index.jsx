@@ -27,8 +27,8 @@ const NavBar = ({isMobileScreen}) => {
           )}
         <Navbar.Collapse id="responsive-navbar-nav d-flex align-items-center justify-content-center">
           <Nav className="w-75 pt-4 d-flex align-items-center justify-content-around m-auto">
-            <NavLink to=""><FontAwesomeIcon icon={faHome} className=" mr-2" />Home</NavLink>
-            <NavLink to="">Book Private Lessons</NavLink>
+            <Nav.Link ><FontAwesomeIcon icon={faHome} className=" mr-2" />Home</Nav.Link>
+            <Nav.Link >Book Private Lessons</Nav.Link>
         {!isMobileScreen&&(
         <Navbar.Brand
         
@@ -37,8 +37,8 @@ const NavBar = ({isMobileScreen}) => {
           <img src={logo} alt="logo" className="w-100" />
         </Navbar.Brand>
           )}
-            <NavLink to="">school program</NavLink>
-            <NavLink to="">About us</NavLink>
+            <Nav.Link>school program</Nav.Link>
+            <Nav.Link>About us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
 

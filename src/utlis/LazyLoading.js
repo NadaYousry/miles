@@ -1,13 +1,16 @@
 import React from "react";
 
-export const BodyContainer = React.lazy(() =>
-  import("./../Containers/BodyContainer")
-);
-export const AboutPage = React.lazy(() =>
-  import("./../Containers/AboutPage")
+export const AdminPanel = React.lazy(() =>
+  import("./../Containers/AdminPanel")
 );
 export const Home = React.lazy(() =>
   import("./../Containers/HomePage")
+);
+export const HomePageBodyContainer = React.lazy(() =>
+  import("./../Containers/HomePageBodyContainer")
+);
+export const AboutPage = React.lazy(() =>
+  import("./../Containers/AboutPage")
 );
 export const PrivateLessonsPage = React.lazy(() =>
   import("./../Containers/PrivateLessonsPage")

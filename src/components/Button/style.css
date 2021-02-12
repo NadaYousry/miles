@@ -167,13 +167,51 @@
   box-shadow: 0 0 0 0.2rem var(--orange) !important;
   color: var(--white);
 }
+/* light green */
+
+/* orange button */
+
+.light-green-btn {
+  font-size: 0.8rem;
+  font-family: var(--boldFont);
+  border-radius: 6px;
+  width: auto !important;
+  padding: 0.375rem 1.2rem;
+  display: inline-block !important;
+  background-color: var(--lightGreen);
+  border-color: var(--lightGreen);
+  color: var(--white);
+}
+.light-green-btn:hover {
+  background-color: var(--lightGreen);
+  border-color: var(--lightGreen);
+  color: var(--white);
+}
+.light-green-btn:focus {
+  background-color: var(--lightGreen);
+  border-color: var(--lightGreen);
+  color: var(--white);
+  outline: none;
+  box-shadow: 0 0 0 0.2rem var(--lightGreen);
+}
+.btn-primary.orange:not(:disabled):not(.disabled):active,
+.btn-primary.orange:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: var(--lightGray);
+  border-color: var(--lightGray);
+  color: var(--white);
+}
+.btn-primary.light-green:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 0.2rem var(--lightGreen) !important;
+  color: var(--white);
+}
 @media screen and (max-width: 786px) {
   .btn.green-btn {
     width: 100% !important;
   }
 }
 @media screen and (max-width: 480px) {
-  .btn {
+  .btn:not(.light-green) {
     width: 100% !important;
   }
 
