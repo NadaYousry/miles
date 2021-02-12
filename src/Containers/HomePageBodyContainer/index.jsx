@@ -90,7 +90,7 @@ const HomePageBodyContainer = ({ isMobileScreen }) => {
                     <LazyComponents.GroupLessonsPage isMobileScreen={isMobileScreen}/>
                   </Suspense>
                 </Route>
-                <Redirect exact from="/react-app" to="about" />
+                <Redirect exact from="/react-app" to="/react-app/about" />
               </Switch>
             </div>
           </div>
