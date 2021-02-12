@@ -1,7 +1,6 @@
 {
   "name": "miles-website",
   "version": "0.1.0",
-  "private": true,
   "homepage": "http://NadaYousry.github.io/react-app",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",

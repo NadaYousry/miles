@@ -4,6 +4,8 @@ import TextInput from "../../components/TextInput";
 import LocationInputs from "../../components/LocationInputs";
 import ImageUploader from "../../components/ImageUploader";
 import "./style.css";
+import SelectDays from "../../components/SelectDays";
+import SelectTime from "../../components/SelectTime";
 const AdminPanel = () => {
   const [isMobileScreen, setIsMobileScreen] = useState(false);
   const [currentWidth, setCurrentWidth] = useState(0);
@@ -31,6 +33,8 @@ const AdminPanel = () => {
       <TextAreaFrom title={"Special mention"} wordsValue={200} />
       <ImageUploader title={"Gallery"} />
       <LocationInputs title={"Location"} />
+      <SelectDays title={"Open Days"}/>
+      <SelectTime title={"Open Hours"}/>
     </div>
   );
 };

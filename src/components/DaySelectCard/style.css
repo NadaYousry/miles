@@ -1,0 +1,18 @@
+@import "./../../generalStyles/variables.css";
+.day {
+  background-color: var(--white);
+  text-align: center;
+  padding: 0.5rem 1rem;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+}
+.selected {
+  border: 2px solid var(--lightGreen);
+}
+@media screen and (max-width: 480px) {
+}

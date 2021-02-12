@@ -5,6 +5,9 @@
   padding: 2% 2%;
   border-bottom: 1px solid var(--borderGray);
 }
+.input-wrapper:last-of-type {
+  border-bottom: none;
+}
 .address-input,
 .address-input:focus {
   background-color: transparent;
