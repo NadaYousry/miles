@@ -4,22 +4,21 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  transition: all 0.2s ease-in-out;
 }
 
 .icon-wrapper.green {
   background-color: var(--green);
 }
-/* activity icons */
-.icon-wrapper.normal:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-}
-.icon-wrapper.normal:hover + .icon-description {
-  color: var(--darkBlue);
-}
 .icon-description {
   font-size: 12px;
+  text-align: center;
+}
+.radial {
+  cursor: pointer;
+
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
 }
 @media screen and (max-width: 480px) {
   .icon-description {

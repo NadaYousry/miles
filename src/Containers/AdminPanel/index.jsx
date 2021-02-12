@@ -6,6 +6,7 @@ import ImageUploader from "../../components/ImageUploader";
 import "./style.css";
 import SelectDays from "../../components/SelectDays";
 import SelectTime from "../../components/SelectTime";
+import SelectAmenities from "../../components/SelectAmenities";
 const AdminPanel = () => {
   const [isMobileScreen, setIsMobileScreen] = useState(false);
   const [currentWidth, setCurrentWidth] = useState(0);
@@ -35,6 +36,8 @@ const AdminPanel = () => {
       <LocationInputs title={"Location"} />
       <SelectDays title={"Open Days"}/>
       <SelectTime title={"Open Hours"}/>
+      <SelectAmenities title={"Amenities"}/>
+      
     </div>
   );
 };

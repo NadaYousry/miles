@@ -1,6 +1,6 @@
 @import "./../../generalStyles/variables.css";
 .activity-icons {
-  width: 80%;
+  width: 85%;
 }
 @media screen and (max-width: 480px) {
   .sub-heading {
