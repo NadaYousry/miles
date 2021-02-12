@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 import ButtonComponent from "../Button";
 import "./style.css";
-const LocationInputs = ({ title,wordsValue }) => {
+const LocationInputs = ({ title }) => {
 
   return (
     <div className="imagae-uploader-container">
