@@ -21,76 +21,76 @@ const HomePageBodyContainer = ({ isMobileScreen }) => {
               <Nav className={`${isMobileScreen?"px-0":""} navbar`}>
                 <NavLink
                   activeClassName="active"
-                  to={`/about`}
+                  to={`/react-app/about`}
                   className="nav-link"
                 >
                   About
                 </NavLink>
                 <NavLink
                   activeClassName="active"
-                  to={`/group-lessons`}
+                  to={`/react-app/group-lessons`}
                   className="nav-link"
                 >
                   Group Lesson
                 </NavLink>
                 <NavLink
                   activeClassName="active"
-                  to={`/private-lessons`}
+                  to={`/react-app/private-lessons`}
                   className="nav-link"
                 >
                   Private Lesson
                 </NavLink>
                 <NavLink
                   activeClassName="active"
-                  to={`/reviews`}
+                  to={`/react-app/reviews`}
                   className="nav-link"
                 >
                   reviews
                 </NavLink>
                 <NavLink
                   activeClassName="active"
-                  to={`/gallery`}
+                  to={`/react-app/gallery`}
                   className="nav-link"
                 >
                   gallery
                 </NavLink>
                 <NavLink
                   activeClassName="active"
-                  to={`/faq`}
+                  to={`/react-app/faq`}
                   className="nav-link"
                 >
                   FAQ
                 </NavLink>
               </Nav>
               <Switch>
-                <Route path={`/about`}>
+                <Route path={`/react-app/about`}>
                   <Suspense fallback={<Loader />}>
                     <LazyComponents.AboutPage isMobileScreen={isMobileScreen} />
                   </Suspense>
                 </Route>
-                <Route path={`/reviews`}>
+                <Route path={`/react-app/reviews`}>
                   <Suspense fallback={<Loader />}>
                     <LazyComponents.ReviewsPage
                       isMobileScreen={isMobileScreen}
                     />
                   </Suspense>
                 </Route>
-                <Route path={`/gallery`}>
+                <Route path={`/react-app/gallery`}>
                   <Suspense fallback={<Loader />}>
                     <LazyComponents.GalleryPage />
                   </Suspense>
                 </Route>
-                <Route path={`/private-lessons`}>
+                <Route path={`/react-app/private-lessons`}>
                   <Suspense fallback={<Loader />}>
                     <LazyComponents.PrivateLessonsPage isMobileScreen={isMobileScreen}/>
                   </Suspense>
                 </Route>
-                <Route path={`/group-lessons`}>
+                <Route path={`/react-app/group-lessons`}>
                   <Suspense fallback={<Loader />}>
                     <LazyComponents.GroupLessonsPage isMobileScreen={isMobileScreen}/>
                   </Suspense>
                 </Route>
-                <Redirect exact from="/" to="about" />
+                <Redirect exact from="/react-app" to="about" />
               </Switch>
             </div>
           </div>
