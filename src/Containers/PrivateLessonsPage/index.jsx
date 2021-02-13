@@ -5,7 +5,7 @@ const PrivateLessonsPage = ({isMobileScreen}) => {
     <>
       <div className="row">
             <div className="col-12  px-1 mb-2">
-              <PrivateLessonCardContainer isMobileScreen={isMobileScreen} />
+              <PrivateLessonCardContainer find={true} isMobileScreen={isMobileScreen} />
             </div>
       </div>
     </>

@@ -67,7 +67,7 @@
     width: 100%;
   }
   .time-date-container .badge {
-    width: 50%;
+    width: auto;
     border-radius: 6px;
     padding: 2% 2%;
   }

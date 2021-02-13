@@ -3,7 +3,7 @@ import PrivateLessonCard from "../PrivateLessonCard";
 import DontFoundYouNeedCard from "../DontFoundYouNeedCard";
 import TraineeImage from "./../../assets/images/private-lessons/Bitmap.png";
 import "./style.css";
-const PrivateLessonCardContainer = ({ isMobileScreen }) => {
+const PrivateLessonCardContainer = ({ isMobileScreen,find }) => {
   const privateLessons = [
     {
       reteValue: 5,
@@ -70,7 +70,7 @@ const PrivateLessonCardContainer = ({ isMobileScreen }) => {
     },
   ];
   return (
-    <div className={"private-lessons-container"} >
+    <div className={"private-lessons-container"}>
       {privateLessons.map((lesson, index) => {
         return (
           <div key={index}>
@@ -81,10 +81,7 @@ const PrivateLessonCardContainer = ({ isMobileScreen }) => {
           </div>
         );
       })}
-      
-      <DontFoundYouNeedCard
-              isMobileScreen={isMobileScreen}
-            />
+      {find && <DontFoundYouNeedCard isMobileScreen={isMobileScreen} />}
     </div>
   );
 };

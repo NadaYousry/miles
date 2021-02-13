@@ -26,7 +26,7 @@ const ReviewCardContainer = ({ isMobileScreen }) => {
         <div className="col-12">
           <div className="link text-right w-100">
             <p className={`${isMobileScreen ? "text-center" : "text-right"}`}>
-             <Link to='/react-app/reviews'>view all</Link>
+             <Link to='/reviews'>view all</Link>
             </p>
           </div>  
         </div>

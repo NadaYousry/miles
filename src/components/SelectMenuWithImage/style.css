@@ -1,0 +1,30 @@
+@import "./../../generalStyles/variables.css";
+.assign-coach-card {
+  border: 1px solid var(--borderGray);
+  border-radius: 0.25rem;
+}
+.image-container-and-slect {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.image-container {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  .image-container-and-slect {
+    height: 80px;
+    width: 80px;
+  }
+  .image-container {
+    height: 60px;
+    width: 60px;
+  }
+  .image-container-and-slect {
+    padding: 1%;
+  }
+}

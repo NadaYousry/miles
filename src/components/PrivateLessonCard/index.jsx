@@ -3,9 +3,9 @@ import { Card } from "react-bootstrap";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import Star from "./../Star";
 import ButtonComponent from "../Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./style.css";
 const PrivateLessonCard = ({ lesson, isMobileScreen }) => {
+  console.log(isMobileScreen);
   const stars = [
     {
       starIcon: faStar,

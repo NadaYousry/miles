@@ -2,6 +2,9 @@
 .reviews {
   text-align: left;
 }
+.reviews.section-separator:last-of-type {
+  border-bottom: none !important;
+}
 .reviewer-secondary-text {
   font-size: 14px;
   color: var(--textGray) !important;

@@ -55,7 +55,7 @@ const SelectAmenities = ({ title }) => {
     }
   };
   return (
-    <div className="imagae-uploader-container form-body">
+    <div className="form-group-container form-body">
       <form className="form-group">
         <div className="row form-title">
           <div className="col-12 d-flex align-items-center justify-content-between">
@@ -68,10 +68,10 @@ const SelectAmenities = ({ title }) => {
           <div className="section-separator col-12 pb-4 mb-4">
           <label className="address-label">NUMBER OF COURTS</label>
           <span className="d-block amwnity-label">7</span></div>
-          <div className="col-12 col-lg-7 d-flex justify-content-around ">
+          <div className="col-12 col-lg-7 d-flex justify-content-start flex-wrap ">
           {amenities.map((amenity, index) => {
             return (
-              <div className="d-inline-block  icon-container" key={index}>
+              <div className="d-inline-block mx-1 icon-container" key={index}>
                 <CirrcledIconContainer
                 selecting={true}
                   icon={amenity.icon}

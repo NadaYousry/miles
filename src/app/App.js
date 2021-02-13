@@ -10,7 +10,7 @@ function App() {
   const [currentWidth, setCurrentWidth] = useState(0);
   useEffect(() => {
     window.addEventListener("load", (e) => {
-      if (window.innerWidth < 892) {
+      if (window.innerWidth < 0) {
         setIsMobileScreen(true);
       } else {
         setIsMobileScreen(false);
@@ -18,7 +18,7 @@ function App() {
     });
     window.addEventListener("resize", (e) => {
       setCurrentWidth(window.innerWidth);
-      if (window.innerWidth < 892) {
+      if (window.innerWidth < 0) {
         setIsMobileScreen(true);
       } else {
         setIsMobileScreen(false);

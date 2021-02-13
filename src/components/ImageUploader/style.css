@@ -1,5 +1,5 @@
 @import "./../../generalStyles/variables.css";
-.imagae-uploader-container .form-control {
+.form-group-container .form-control {
   max-height: initial !important;
   padding: initial !important;
 }
@@ -7,7 +7,7 @@
   position: relative;
   width: 225px;
 }
-.imagae-uploader-container .form-body {
+.form-group-container .form-body {
   border-radius: 0.25rem;
   border: none;
   font-size: 0.9rem;

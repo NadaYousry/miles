@@ -61,7 +61,7 @@ const AboutPage = ({ isMobileScreen }) => {
                     className=" d-flex align-items-center justify-content-center flex-column"
                     key={index}
                   >
-                    <CircledIconContainer theme={'normal'} icon={data.icon} name={data.name} />
+                    <CircledIconContainer selecting={false} theme={'normal'} icon={data.icon} name={data.name} />
                   </div>
                 );
               })}

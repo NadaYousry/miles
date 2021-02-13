@@ -3,10 +3,13 @@ import TextAreaFrom from "../../components/TextAreaFrom";
 import TextInput from "../../components/TextInput";
 import LocationInputs from "../../components/LocationInputs";
 import ImageUploader from "../../components/ImageUploader";
-import "./style.css";
 import SelectDays from "../../components/SelectDays";
 import SelectTime from "../../components/SelectTime";
 import SelectAmenities from "../../components/SelectAmenities";
+import SelectFeatured from "../../components/SelectFeatured";
+import PrivateLessonCardContainer from "../../components/PrivateLessonCardContainer";
+import FaqFrom from "../../components/FaqFrom";
+import "./style.css";
 const AdminPanel = () => {
   const [isMobileScreen, setIsMobileScreen] = useState(false);
   const [currentWidth, setCurrentWidth] = useState(0);
@@ -37,7 +40,13 @@ const AdminPanel = () => {
       <SelectDays title={"Open Days"}/>
       <SelectTime title={"Open Hours"}/>
       <SelectAmenities title={"Amenities"}/>
-      
+      <SelectFeatured  title={"Features"} isMobileScreen={isMobileScreen}/>
+      <div className="form-group-container">
+        <div className="form-body p-2">
+        <PrivateLessonCardContainer isMobileScreen={isMobileScreen} find={false}/>
+        </div>
+      </div>
+      <FaqFrom/>
     </div>
   );
 };

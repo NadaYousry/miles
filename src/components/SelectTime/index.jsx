@@ -3,7 +3,7 @@ import ButtonComponent from "../Button";
 import "./style.css";
 const SelectTime = ({ title }) => {
   return (
-    <div className="imagae-uploader-container">
+    <div className="form-group-container">
       <form className="form-group">
         <div className="row form-title">
           <div className="col-12 d-flex align-items-center justify-content-between">
