@@ -2,7 +2,7 @@ import React from "react";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import Star from "../Star";
 import "./style.css";
-const FiveStarsRating = ({ratingNumber,peopleNumber}) => {
+const FiveStarsRating = ({ratingNumber,peopleNumber,theme}) => {
   const stars = [
     {
       starIcon: faStar,
@@ -34,7 +34,7 @@ const FiveStarsRating = ({ratingNumber,peopleNumber}) => {
         {stars.map((star, index) => {
           return(
             <div key={index}>
-            <Star theme={"dark-blue"}/></div>);
+            <Star theme={theme}/></div>);
         })}
       </div>
       {ratingNumber&&<span className="d-inline-block five-star-text">({peopleNumber})</span>}

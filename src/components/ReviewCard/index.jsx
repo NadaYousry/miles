@@ -1,31 +1,8 @@
 import React from "react";
 import CircledIconContainer from "../CircleedIconContainer";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import Star from "../Star";
+import FiveStarsRating from "../FiveStarsRating";
 import "./style.css";
-const ReviewCard = ({ isMobileScreen,  review, length }) => {
-  const stars = [
-    {
-      starIcon: faStar,
-      value: 1,
-    },
-    {
-      starIcon: faStar,
-      value: 1,
-    },
-    {
-      starIcon: faStar,
-      value: 1,
-    },
-    {
-      starIcon: faStar,
-      value: 1,
-    },
-    {
-      starIcon: faStar,
-      value: 1,
-    },
-  ];
+const ReviewCard = ({ isMobileScreen, review, length }) => {
   return (
     <div
       className={`row no-gutters align-items-start reviews py-3 section-separator ${
@@ -36,6 +13,7 @@ const ReviewCard = ({ isMobileScreen,  review, length }) => {
         className={` col-2 col-lg-1 col-md-1 d-flex align-items-start justify-content-center flex-column`}
       >
         <CircledIconContainer
+          selecting={false}
           icon={review.reviewIcon}
           name={""}
           theme={"green"}
@@ -58,13 +36,11 @@ const ReviewCard = ({ isMobileScreen,  review, length }) => {
         }`}
       >
         <span className=" d-flex  flex-row justify-content-end">
-          {stars.map((star, index) => {
-            return (
-              <span key={index}>
-                <Star theme={"green"} />
-              </span>
-            );
-          })}
+          <FiveStarsRating
+            ratingNumber={""}
+            peopleNumber={""}
+            theme={"green"}
+          />
         </span>
         <span
           className={`${

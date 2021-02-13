@@ -41,11 +41,15 @@ const AboutPage = ({ isMobileScreen }) => {
     <>
       <section className="row  section-separator mb-5">
         <div
-          className={`col-12 col-md-12 col-lg-6 ${
+          className={`col-12 col-md-12 col-lg-6 mb-5${
             !isMobileScreen ? "section-separator-right" : ""
           }`}
         >
-          <FiveStarsRating ratingNumber={"4.5"} peopleNumber={"122"} />
+        <FiveStarsRating
+          ratingNumber={"4.5"}
+          peopleNumber={"122"}
+          theme={"dark-blue"}
+        />
           <p className="section-separator pb-4">
             Clubhouse Woodridge Tennis Academy offers amazing recently
             re-surfaced Tournament Ready courts servicing North Beach, Glenwood,

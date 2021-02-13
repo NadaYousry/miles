@@ -2,7 +2,6 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { ProgressBar } from "react-bootstrap";
 import FiveStarsRating from "../FiveStarsRating";
-import Star from "../Star";
 import "./style.css";
 const ReviewWithProgress = () => {
   const stars = [
@@ -52,17 +51,15 @@ const ReviewWithProgress = () => {
             <div
               className={`star-icon-wrapper d-flex align-items-center justify-content-center`}
             >
-              {stars.map((data, index) => {
-                return (
-                  <div key={index}>
-                    <Star theme={"green"} />
-                  </div>
-                );
-              })}
+              <FiveStarsRating
+                ratingNumber={""}
+                peopleNumber={""}
+                theme={"green"}
+              />
             </div>
           </div>
           <span className="d-inline-block five-star-with-progress-text w-100">
-            125 Reviews
+            125 Reviews 
           </span>
         </div>
       </div>
