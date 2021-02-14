@@ -15,11 +15,20 @@
     transform: rotate(990deg);
   }
 }
-
+.loader-container {
+  height: 100%;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: var(--baleWhite);
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
 #pgring {
-  position: fixed;
-  top: 50vh;
-  left: 50vw;
+  position: absolute;
   transform: translate(-50%, -50%);
 }
 

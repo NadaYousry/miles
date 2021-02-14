@@ -5,7 +5,7 @@ import * as LazyComponents from "./../utlis/LazyLoading";
 import Loader from "../components/Loader";
 
 export const Routes = (
-  <Suspense fallback={<Loader />}>
+  <Suspense fallback={<Loader/>}>
     <Router history={history}>
       <Switch>
         <LazyComponents.AdminPanel path="/admin" exact/>

@@ -83,13 +83,18 @@
     display: none;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .mobile-screen {
     display: block !important;
   }
   .group-lessons-container .card-header {
     flex-direction: column !important;
     padding-bottom: 2%;
+  }
+  .group-lessons-container .time-date-container .badge {
+    width: 50%;
+    padding: 2%;
+    margin-bottom: 2%;
   }
   .mobile-screen {
     display: block;

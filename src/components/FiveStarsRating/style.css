@@ -5,6 +5,9 @@
   justify-content: flex-start;
   margin-bottom: 9%;
 }
+.five-stars-container .sky-blue {
+  color: var(--skyBlue);
+}
 
 .five-star-rating {
   font-family: var(--boldFont);
@@ -16,7 +19,7 @@
   font-size: 14px;
   letter-spacing: 0.2px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .five-stars-container {
     justify-content: center;
   }

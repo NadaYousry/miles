@@ -30,20 +30,16 @@ const GroupLessonCard = ({ lesson, isMobileScreen }) => {
                   : "justify-content-between"
               }`}
             >
-              <div className="w-50">
                 <BadgeComponent
                   type={"time"}
                   text={lesson.time}
                   theme={"gray"}
                 />
-              </div>
-              <div className="w-50">
                 <BadgeComponent
                   type={"date"}
                   text={lesson.date}
                   theme={"gray"}
                 />
-              </div>
             </div>
           </div>
         </Card.Header>
@@ -64,27 +60,23 @@ const GroupLessonCard = ({ lesson, isMobileScreen }) => {
                     : "justify-content-between"
                 }`}
               >
-                <div className="w-50">
                   <BadgeComponent
                     type={"time"}
                     text={lesson.time}
                     theme={"gray"}
                   />
-                </div>
-                <div className="w-50">
                   <BadgeComponent
                     type={"date"}
                     text={lesson.date}
                     theme={"gray"}
                   />
-                </div>
               </div>
             </div>
           </Card.Header>
         )}
         <Card.Body>
           <div className="row">
-            <div className="col-12 col-lg-8 col-md-8 description d-flex justify-content-center flex-column">
+            <div className="col-12 col-lg-7 col-md-7 description d-flex justify-content-center flex-column">
               <Card.Text
                 className={`group-lessons-description desktop-screen ${
                   isMobileScreen ? "mb-3" : ""
@@ -95,7 +87,7 @@ const GroupLessonCard = ({ lesson, isMobileScreen }) => {
               <span className="place-name">{lesson.place}</span>
             </div>
             <div
-              className={`col-12 col-lg-4 col-md-4 price-and-button  d-flex flex-column`}
+              className={`col-12 col-lg-5 col-md-5 price-and-button  d-flex flex-column`}
             >
               <span
                 className={`group-lessons-price  mb-2 ${

@@ -58,7 +58,6 @@ const SelectMenuWithImage = () => {
           return (
             <div key={index}>
               <Dropdown.Item
-                
               >
                 {coach.coachName}
               </Dropdown.Item>

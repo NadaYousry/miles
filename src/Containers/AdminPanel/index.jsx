@@ -37,16 +37,19 @@ const AdminPanel = () => {
       <TextAreaFrom title={"Special mention"} wordsValue={200} />
       <ImageUploader title={"Gallery"} />
       <LocationInputs title={"Location"} />
-      <SelectDays title={"Open Days"}/>
-      <SelectTime title={"Open Hours"}/>
-      <SelectAmenities title={"Amenities"}/>
-      <SelectFeatured  title={"Features"} isMobileScreen={isMobileScreen}/>
+      <SelectDays title={"Open Days"} />
+      <SelectTime title={"Open Hours"} />
+      <SelectAmenities title={"Amenities"} />
+      <SelectFeatured title={"Features"} isMobileScreen={isMobileScreen} />
       <div className="form-group-container">
         <div className="form-body p-2">
-        <PrivateLessonCardContainer isMobileScreen={isMobileScreen} find={false}/>
+          <PrivateLessonCardContainer
+            isMobileScreen={isMobileScreen}
+            find={false}
+          />
         </div>
       </div>
-      <FaqFrom/>
+      <FaqFrom />
     </div>
   );
 };

@@ -14,5 +14,5 @@
 .selected {
   border: 2px solid var(--lightGreen);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
 }

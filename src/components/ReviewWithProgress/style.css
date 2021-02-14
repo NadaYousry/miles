@@ -27,7 +27,7 @@
 .progress-bar.bg-success {
   background-color: var(--green) !important;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .progress {
     height: 3px !important;
   }

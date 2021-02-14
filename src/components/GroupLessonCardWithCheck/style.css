@@ -86,64 +86,6 @@
 .place-far {
   font-family: var(--boldFont);
 }
-.group-lessons-check-box .form-group input {
-  padding: 0;
-  height: initial;
-  width: initial;
-  display: none;
-  cursor: pointer;
-}
-
-.group-lessons-check-box .form-group label {
-  width: 100%;
-  position: relative;
-  cursor: pointer;
-}
-
-.group-lessons-check-box .form-group label:before {
-  content: "";
-  -webkit-appearance: none;
-  background-color: var(--borderGray);
-  padding: 10px;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  cursor: pointer;
-}
-.single-check-box-row {
-  width: 5%;
-}
-.group-lessons-check-box .card-header {
-  padding: 1rem 1.25rem;
-}
-.single-check-box-row {
-  position: relative;
-}
-.single-check-box-row:after {
-  content: "";
-  height: 77px;
-  width: 1px;
-  background-color: var(--borderGray);
-  position: absolute;
-  left: 0;
-  top: -78%;
-}
-.group-lessons-check-box .form-group input:checked + label:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 31%;
-  left: 45%;
-  width: 5px;
-  height: 10px;
-  border: solid var(--white);
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-}
-.group-lessons-check-box .form-group label.checked:before {
-  background-color: var(--green);
-}
 @media screen and (max-width: 1024px) {
   .group-lessons-container .date-and-time-info {
     width: 55%;
@@ -163,7 +105,7 @@
     font-size: 0.7rem;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .single-check-box-row:after {
     height: 140px;
     top: -208%;

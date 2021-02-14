@@ -4,7 +4,7 @@
 }
 .modal .modal-header {
   border-bottom: none !important;
-  padding: 1% 6%;
+  padding: 0.5rem;
 }
 .modal-body {
   padding: 0.5rem;
@@ -16,4 +16,13 @@
 }
 .modal-header .close {
   margin: 0;
+}
+.social-media-content h3,
+.social-media-content p {
+  text-align: center;
+}
+
+.social-media-content h3 {
+  font-family: var(--boldFont);
+  font-size: 1.8rem;
 }

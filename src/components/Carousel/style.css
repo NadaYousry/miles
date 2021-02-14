@@ -65,11 +65,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .carousel-indicators {
-    margin-bottom: 6% !important;
-  }
-}
-@media screen and (max-width: 768px) {
   #home.container {
     padding: 0;
     border-radius: 0;
@@ -84,7 +79,7 @@
     max-height: 310px;
   }
   .carousel-indicators {
-    margin-bottom: 14%;
+    margin-bottom: 6%;
   }
 
   .carousel-control-prev-icon,
@@ -92,9 +87,13 @@
     display: none;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     display: none;
+  }
+
+  .carousel-indicators {
+    margin-bottom: 14% !important;
   }
 }

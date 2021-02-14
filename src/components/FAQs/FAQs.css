@@ -37,7 +37,7 @@ h3 {
 }
 @media screen and (max-width: 786px) {
   .accordion h3 {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     line-height: 1.2rem;
   }
   .accordion h3 svg {

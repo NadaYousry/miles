@@ -11,7 +11,7 @@
   font-size: 12px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .alert-wrapper .alert {
     width: 100%;
   }

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ButtonComponent from "../Button";
 import GroupLessonCardWithCheck from "../GroupLessonCardWithCheck";
-import GroupLessonCardSelectTrainer from "../GroupLessonCardSelectTrainer";
 import "./style.css";
 const SelectFeatured = ({ title, isMobileScreen }) => {
   const gruopLessons = [
@@ -21,6 +20,20 @@ const SelectFeatured = ({ title, isMobileScreen }) => {
     },
     {
       id:2,
+      groupFor: "Kids | 4-7",
+      experience:"For Intermediate & Advanced Students",
+      groupName: "Junior 8-12 fairland Recreational Park",
+      description:
+        "Get one on one private instruction. Improve faster working on specific skills.",
+      price: "$20/hr",
+      place: "Fairland Recreational Park ",
+      howFar:"0 miles away",
+      label: "Group",
+      date: "23 Aug - 13 Sep",
+      time: "4:00pm - 5:00pm",
+    },
+    {
+      id:3,
       groupFor: "Kids | 4-7",
       experience:"For Intermediate & Advanced Students",
       groupName: "Junior 8-12 fairland Recreational Park",
@@ -67,14 +80,9 @@ const SelectFeatured = ({ title, isMobileScreen }) => {
                   <GroupLessonCardWithCheck
                     lesson={lesson}
                     isMobileScreen={isMobileScreen}
+                    index={index}
+                    length={gruopLessons.length}
                   />
-                </div>
-              );
-            })}
-            {selectGruopLessonsTrainee.map((lesson, index) => {
-              return (
-                <div key={index} className="w-100">
-                  <GroupLessonCardSelectTrainer lesson={lesson} isMobileScreen={isMobileScreen}/>
                 </div>
               );
             })}

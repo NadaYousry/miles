@@ -20,7 +20,7 @@
   height: 53px;
   border-radius: 50%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .icon-description {
     font-size: 11px;
   }

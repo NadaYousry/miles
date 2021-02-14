@@ -1,0 +1,122 @@
+@import "./../../generalStyles/variables.css";
+.footer-container {
+  background-color: var(--darkBlue);
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+}
+.footer-container .container {
+  width: 70%;
+}
+.footer-container p,
+.footer-container a {
+  color: var(--white);
+}
+.footer-container .image-container {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+}
+.contact-info-container p {
+  font-size: 1rem;
+  text-transform: unset;
+}
+.phone-info p {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.phone-info .phone-icon {
+  font-size: 1.2rem;
+}
+.phone-info .phone-icon,
+.phone-info a,
+.email-info a {
+  color: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+.phone-info:hover > p > .phone-icon,
+.phone-info:hover > p > a,
+.email-info:hover > p > a,
+.footer-container .nav-link:hover {
+  color: var(--green) !important;
+}
+.about-miles p {
+  font-size: 1.1rem;
+}
+
+.footer-container .navbar {
+  width: 100%;
+  text-align: left;
+  display: block;
+  border-bottom: none;
+}
+.footer-container .nav-link {
+  transition: all 0.2s ease-in-out;
+  display: block;
+  margin-bottom: 5%;
+}
+.footer-container .nav-link.active::after {
+  content: none;
+}
+
+.footer-container .nav-link.active {
+  font-family: var(--regularFont);
+  color: var(--white);
+}
+.my-account-container {
+  border-bottom: 1px solid var(--white);
+}
+/* socail media icons */
+.social-media-icons {
+  width: 100%;
+  cursor: pointer;
+}
+.social-media-icons i {
+  color: var(--white);
+  margin-left: 3%;
+  transition: all 0.2s ease-in-out;
+}
+.fa-youtube:hover {
+  color: #ff0000;
+}
+.fa-facebook-f:hover {
+  color: #1877f2;
+}
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+.fa-pinterest-p:hover {
+  color: #bd081c;
+}
+.fa-instagram:hover {
+  color: #c32aa3;
+}
+
+@media screen and (max-width: 800px) {
+  p {
+    text-align: left;
+  }
+
+  .about-miles-container {
+    display: flex;
+    align-items: center;
+  }
+  .footer-container .container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .column-container {
+    padding-bottom: 6% !important;
+  }
+
+  .footer-container .container {
+    width: 90%;
+    padding: 1%;
+  }
+}

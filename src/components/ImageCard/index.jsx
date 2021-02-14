@@ -25,7 +25,7 @@ const ImageCard = ({ image }) => {
           </div>
         </div>
       </div>
-      <ModalComponent handleClose={handleCloseModal} openModal={openModal} image={image}/>
+      <ModalComponent handleClose={handleCloseModal} openModal={openModal} image={image} content={''}/>
     </>
   );
 };

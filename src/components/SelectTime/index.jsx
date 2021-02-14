@@ -15,25 +15,27 @@ const SelectTime = ({ title }) => {
           <label className="address-label px-3">SELECT ALL WEEK DAYS</label>
           <div className="row px-3">
             <div className="col-6 col-md-4 col-lg-3 d-flex align-items-center">
-            <label className="time-label mr-3">From</label>
-            <input
-            className="time"
-              type="time"
-              id="appt"
-              name="appt"
-              min="09:00"
-              max="18:00"
-            /></div>
+              <label className="time-label mr-3">From</label>
+              <input
+                className="time"
+                type="time"
+                id="from"
+                name="from"
+                min="09:00"
+                max="18:00"
+              />
+            </div>
             <div className="col-6 col-md-4 col-lg-3 d-flex align-items-center">
-            <label className="time-label mr-3">To</label>
-            <input
-            className="time"
-              type="time"
-              id="appt"
-              name="appt"
-              min="09:00"
-              max="18:00"
-            /></div>
+              <label className="time-label mr-3">To</label>
+              <input
+                className="time"
+                type="time"
+                id="to"
+                name="to"
+                min="09:00"
+                max="18:00"
+              />
+            </div>
           </div>
         </div>
       </form>

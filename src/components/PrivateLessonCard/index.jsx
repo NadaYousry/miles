@@ -4,25 +4,8 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import Star from "./../Star";
 import ButtonComponent from "../Button";
 import "./style.css";
+import FiveStarsRating from "../FiveStarsRating";
 const PrivateLessonCard = ({ lesson, isMobileScreen }) => {
-  console.log(isMobileScreen);
-  const stars = [
-    {
-      starIcon: faStar,
-    },
-    {
-      starIcon: faStar,
-    },
-    {
-      starIcon: faStar,
-    },
-    {
-      starIcon: faStar,
-    },
-    {
-      starIcon: faStar,
-    },
-  ];
   return (
     <div className={"private-lessons-container mb-3"}>
       <Card>
@@ -42,13 +25,7 @@ const PrivateLessonCard = ({ lesson, isMobileScreen }) => {
             {lesson.trainner}
           </h5>
           <span className={`d-inline-block mr-2  ${isMobileScreen?"mb-2":""}`}>
-            {stars.map((star, index) => {
-              return (
-                <span key={index}>
-                  <Star theme={"sky-blue"} />
-                </span>
-              );
-            })}
+            <FiveStarsRating theme={'sky-blue'} ratingNumber={''} peopleNumber={''}/>
           </span>
           <span className={`rate-from`}>{lesson.rateFrom}</span>
         </Card.Header>

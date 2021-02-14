@@ -79,7 +79,7 @@
   opacity: 0;
   cursor: pointer;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .image-wrapper {
     width: 130px;
     height: 111px;

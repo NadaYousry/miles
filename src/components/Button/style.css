@@ -13,32 +13,26 @@
 }
 /* green button */
 .green-btn {
-  width: 70% !important;
-  display: inline-block !important;
+  width: 50%;
+  font-size: 0.7rem;
+  font-family: var(--boldFont);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
   padding: 2% 5%;
   background-color: var(--green);
   border-color: var(--green);
 }
-.green-btn:hover {
-  background-color: var(--darkGreen);
-  border-color: var(--darkGreen);
-}
-
-.green-btn:focus {
-  background-color: var(--darkGreen);
-  border-color: var(--darkGreen);
-  outline: none;
-  box-shadow: 0 0 0 0.2rem var(--green);
-}
-
 .btn-primary.green:not(:disabled):not(.disabled):active,
 .btn-primary.green:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
+.btn-primary.green:not(:disabled):not(.disabled):hover,
+.btn-primary.green:not(:disabled):not(.disabled):focus,
+.btn-primary.green:not(:disabled):not(.disabled):active:focus,
+.show > .green.btn-primary.dropdown-toggle,
+.green.btn-primary.btn.btn-primary:not(:disabled):not(.disabled):active {
   background-color: var(--darkGreen);
   border-color: var(--darkGreen);
-}
-.btn-primary.green:not(:disabled):not(.disabled):active:focus {
-  box-shadow: 0 0 0 0.2rem var(--green) !important;
+  color: var(--white);
 }
 /* sky blue button */
 
@@ -48,16 +42,16 @@
   background-color: var(--skyBlue);
   border-color: var(--skyBlue);
 }
-.sky-blue-btn:hover {
+.sky-blue-btn.btn.btn-primary:hover {
   background-color: var(--darkSkyBlue);
   border-color: var(--darkSkyBlue);
+  color: var(--white) !important;
 }
 .sky-blue-btn:focus,
 .btn-primary.sky-blue.btn-primary.sky-blue.btn-primary:focus {
   background-color: var(--darkSkyBlue);
   border-color: var(--darkSkyBlue);
   outline: none;
-  box-shadow: 0 0 0 0.2rem var(--skyBlue);
   color: var(--white);
 }
 .btn-primary.sky-blue:not(:disabled):not(.disabled):active,
@@ -81,9 +75,8 @@
   border-color: var(--lightGray);
   color: var(--black);
 }
-.white-btn:hover,
-.btn.btn-primary:hover {
-  background-color: var(--lightGray);
+.white-btn.btn.btn-primary:hover {
+  background-color: var(--baleWhite) !important;
   border-color: var(--lightGray);
   color: var(--black);
 }
@@ -162,7 +155,8 @@
   border-color: var(--orange);
   color: var(--white);
 }
-.orange-btn:hover {
+.orange-btn:hover,
+.orange-btn.btn-primary.btn.btn-primary:not(:disabled):not(.disabled):active {
   background-color: var(--orange);
   border-color: var(--orange);
   color: var(--white);
@@ -172,7 +166,6 @@
   border-color: var(--orange);
   color: var(--white);
   outline: none;
-  box-shadow: 0 0 0 0.2rem var(--orange);
 }
 .btn-primary.orange:not(:disabled):not(.disabled):active,
 .btn-primary.orange:not(:disabled):not(.disabled).active,
@@ -181,11 +174,6 @@
   background-color: var(--darkOrange);
   border-color: var(--darkOrange);
   color: var(--white);
-  box-shadow: none;
-}
-.btn-primary.orange:not(:disabled):not(.disabled):active:focus {
-  box-shadow: 0 0 0 0.2rem var(--orange) !important;
-  color: var(--orange);
 }
 /* light green */
 
@@ -201,29 +189,22 @@
   color: var(--white);
 }
 .light-green-btn:hover {
-  background-color: var(--lightGreen);
-  border-color: var(--lightGreen);
+  background-color: var(--lightGreenHoverEffect);
+  border-color: var(--lightGreenHoverEffect);
   color: var(--white);
 }
 .light-green-btn:focus {
-  background-color: var(--lightGreen);
-  border-color: var(--lightGreen);
-  color: var(--lightGreen);
-  box-shadow: 0 0 0 0.2rem var(--lightGreen);
+  background-color: var(--lightGreenHoverEffect);
+  border-color: var(--lightGreenHoverEffect);
+  color: var(--white);
 }
 .btn-primary.light-green-btn:not(:disabled):not(.disabled):active,
 .btn-primary.light-green-btn:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle,
-.btn.light-green.btn-primary:focus {
-  background-color: var(--lightGreen);
-  border-color: var(--lightGreen);
-  color: var(--white);
-
-  box-shadow: none !important;
-}
+.btn.light-green.btn-primary:focus,
 .btn-primary.light-green:not(:disabled):not(.disabled):active:focus {
-  box-shadow: 0 0 0 0.2rem var(--lightGreen) !important;
-  color: var(--lightGreen);
+  background-color: var(--lightGreenHoverEffect);
+  color: var(--white);
 }
 /* gray button */
 
@@ -266,10 +247,10 @@
 }
 @media screen and (max-width: 786px) {
   .btn.green-btn {
-    width: 100% !important;
+    width: 50% !important;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .btn:not(.light-green) {
     width: 100% !important;
   }

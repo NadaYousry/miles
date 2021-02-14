@@ -5,7 +5,7 @@ import "./style.css";
 const TextAreaFrom = ({ title,wordsValue }) => {
   const [count, setCount] = useState(0);
   const countWords= (e)=>{    
-    setCount((e.target.value).length+1)
+    setCount((e.target.value).length)
   }
   return (
     <>
@@ -22,7 +22,7 @@ const TextAreaFrom = ({ title,wordsValue }) => {
               />
             </div>
           </div>
-          <Form.Control as="textarea" rows={3} onKeyDown={(e)=>{countWords(e)}}/>
+          <Form.Control as="textarea" rows={3} onKeyUp={(e)=>{countWords(e)}}/>
           <span className="counter">{`${count} / ${wordsValue}`}</span>
         </Form.Group>
       </Form>

@@ -6,8 +6,6 @@
   letter-spacing: 1px;
   line-height: 1.5rem;
 }
-.feature-info-container .card-text {
-}
 .time-date-container {
   flex-wrap: nowrap;
 }
@@ -15,60 +13,22 @@
   text-align: left;
 }
 .feature-type {
-  font-size: 12px;
+  font-size: 0.7rem;
   font-family: var(--boldFont);
 }
 .feature-type.green {
   color: var(--green);
 }
 .feature-description {
-  font-size: 14px;
+  font-size: 0.7rem;
   color: var(--textGray);
   font-weight: lighter;
 }
-@media screen and (max-width: 425px) {
-  .view-btn.green {
-    width: 100% !important;
-  }
-  .feature-description {
-    margin-bottom: 5% !important;
-  }
-  .date-and-time-info {
-    margin-bottom: 5% !important;
-  }
-  .note {
-    margin-bottom: 5% !important;
-    padding: 3% 5%;
-    border-radius: 6px;
-  }
-  .time-date-container .info-container span {
-    font-size: 10px;
-  }
-  .feature-info-container {
-    display: flex;
-  }
-  .feature-info-container .title-info {
-    order: 1;
-  }
-  .feature-info-container .date-and-time-info {
-    order: 3;
-  }
-  .feature-info-container .description-info {
-    order: 2;
-  }
-  .feature-info-container .description-info p {
-    font-size: 0.7rem;
-  }
-  .feature-info-container .feature-button {
-    order: 4;
-  }
-
-  .card-container {
+.feature-button .btn {
+  font-size: 12px;
+}
+@media screen and (max-width: 500px) {
+  .card-title {
     width: 100%;
-  }
-  .time-date-container .badge {
-    width: auto;
-    border-radius: 6px;
-    padding: 2% 2%;
   }
 }

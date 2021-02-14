@@ -26,7 +26,7 @@ const FiveStarsRating = ({ratingNumber,peopleNumber,theme}) => {
     },
   ];
   return (
-    <div className="five-stars-container">
+    <div className="five-stars-container d-flex align-items-center">
       {peopleNumber&&<span className="d-inline-block five-star-rating">{ratingNumber}</span>}
       <div
         className={`star-icon-wrapper d-flex align-items-center justify-content-center mx-2`}

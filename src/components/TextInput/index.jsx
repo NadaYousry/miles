@@ -5,7 +5,7 @@ import "./style.css";
 const TextInput = ({ title,wordsValue }) => {
   const [count, setCount] = useState(0);
   const countWords= (e)=>{    
-    setCount((e.target.value).length+1)
+    setCount((e.target.value).length)
   }
   return (
     <>
@@ -21,7 +21,7 @@ const TextInput = ({ title,wordsValue }) => {
               />
             </div>
           </div>
-          <Form.Control type="text" onKeyDown={(e)=>{countWords(e)}}/>
+          <Form.Control type="text" onKeyUp={(e)=>{countWords(e)}}/>
           <span className="counter">{`${count} / ${wordsValue}`}</span>
         </Form.Group>
       </Form>

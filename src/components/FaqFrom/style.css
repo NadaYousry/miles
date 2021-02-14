@@ -17,7 +17,10 @@
   margin-left: 0 !important;
   margin-right: 2%;
 }
-@media screen and (max-width: 450px) {
+.form-group-container .faq-answes .delete-btn .gray {
+  margin-right: 0%;
+}
+@media screen and (max-width: 500px) {
   .form-group-container.faq .light-green-btn {
     width: 100% !important;
   }

@@ -104,7 +104,7 @@ const AboutPage = ({ isMobileScreen }) => {
           <div className="review-container">
             <div className="row no-gutters align-items-start">
               <div className="col-12">
-                <FeaturedCard isMobileScreen={isMobileScreen} />
+                <FeaturedCard />
               </div>
             </div>
           </div>

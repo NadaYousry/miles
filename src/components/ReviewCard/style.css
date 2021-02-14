@@ -10,7 +10,7 @@
   color: var(--textGray) !important;
   letter-spacing: 0.7px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .reviewer-name {
     font-size: 12px;
   }

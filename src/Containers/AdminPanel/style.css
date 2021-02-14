@@ -3,7 +3,17 @@
   padding-top: 5% !important;
   padding-bottom: 5% !important;
 }
+.group-lessons-container .card-header {
+  position: relative;
+}
+.admin-panel-container .date-and-time-info .time-date-container::after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: var(--borderGray);
+  position: absolute;
+}
 @media screen and (max-width: 768px) {
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
 }
