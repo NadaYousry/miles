@@ -71,7 +71,13 @@ const FeaturedCard = () => {
                       )}
                     </div>
                     <Card.Text className="mb-2">
-                      <span className="feature-type">{data.type}</span>-
+                      <span className="feature-type mr-2">
+                        <BadgeComponent
+                          type={""}
+                          text={data.type}
+                          theme={"white"}
+                        />
+                      </span>
                       <span className="feature-type green">{data.for}</span>
                     </Card.Text>
                     <Card.Text className="feature-description description-info mb-2">
@@ -130,7 +136,7 @@ const FeaturedCard = () => {
         handleClose={handleCloseModal}
         openModal={openModal}
         socailMediaShare={true}
-        image={''}
+        image={""}
       />
     </>
   );
