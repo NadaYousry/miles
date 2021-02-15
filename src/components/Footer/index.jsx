@@ -6,8 +6,41 @@ import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./style.css";
 import { Nav } from "react-bootstrap";
-import CircledIconContainer from "../CircleedIconContainer";
 const Footer = () => {
+  const navLinks = [
+    {
+      url: `/about`,
+      name: "About",
+    },
+    {
+      url: `/group-lessons`,
+      name: "Group Lesson",
+    },
+    {
+      url: `/private-lessons`,
+      name: "Private Lesson",
+    },
+    {
+      url: `/reviews`,
+      name: "Reviews",
+    },
+    {
+      url: `/gallery`,
+      name: "Gallery",
+    },
+    {
+      url: `/faq`,
+      name: "FAQ",
+    },
+  ];
+  const onFooterNavClick = () => {
+    history.listen(() => {
+      let homePage = document.getElementById("home-container");
+      if (homePage) {
+        homePage.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  };
   return (
     <footer className="footer-container pt-5 pb-4 px-0">
       <div className="container">
@@ -47,48 +80,18 @@ const Footer = () => {
             <div className="links-conainer">
               <Router history={history}>
                 <Nav className={` navbar px-0`}>
-                  <NavLink
-                    activeClassName="active"
-                    to={`/about`}
-                    className="nav-link"
-                  >
-                    About
-                  </NavLink>
-                  <NavLink
-                    activeClassName="active"
-                    to={`/group-lessons`}
-                    className="nav-link"
-                  >
-                    Group Lesson
-                  </NavLink>
-                  <NavLink
-                    activeClassName="active"
-                    to={`/private-lessons`}
-                    className="nav-link"
-                  >
-                    Private Lesson
-                  </NavLink>
-                  <NavLink
-                    activeClassName="active"
-                    to={`/reviews`}
-                    className="nav-link"
-                  >
-                    reviews
-                  </NavLink>
-                  <NavLink
-                    activeClassName="active"
-                    to={`/gallery`}
-                    className="nav-link"
-                  >
-                    gallery
-                  </NavLink>
-                  <NavLink
-                    activeClassName="active"
-                    to={`/faq`}
-                    className="nav-link"
-                  >
-                    FAQ
-                  </NavLink>
+                  {navLinks.map((navlink, index) => {
+                    return (
+                      <NavLink
+                        activeClassName="active"
+                        to={navlink.url}
+                        className="nav-link"
+                        onClick={onFooterNavClick}
+                      >
+                        {navlink.name}
+                      </NavLink>
+                    );
+                  })}
                 </Nav>
               </Router>
             </div>
@@ -116,7 +119,9 @@ const Footer = () => {
       <div className="container copy-right-container">
         <div className="row">
           <div className="col-6">
-            <p className="mb-0">&copy; Miles Ahead Tennis. All Rights Reserved</p>
+            <p className="mb-0">
+              &copy; Miles Ahead Tennis. All Rights Reserved
+            </p>
           </div>
           <div className="col-6 d-flex ">
             <div className="social-media-icons text-right">
