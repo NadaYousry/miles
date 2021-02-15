@@ -126,7 +126,7 @@ const FeaturedCard = () => {
           <div className="col-12">
             <div className="link text-right w-100">
               <p className={`text-right`}>
-                <Link to="/"></Link>
+                <Link to="/">View all</Link>
               </p>
             </div>
           </div>

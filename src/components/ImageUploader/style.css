@@ -40,6 +40,7 @@
 }
 .button-wrapper,
 .image-wrapper {
+  transition: all 0.2s ease-in-out;
   margin-left: 3%;
   margin-bottom: 3%;
   background-color: var(--white);
@@ -78,6 +79,10 @@
   left: 0;
   opacity: 0;
   cursor: pointer;
+}
+.button-wrapper:hover {
+  box-shadow: 0 10px 20px var(--borderGray);
+  transform: translateY(-5px);
 }
 @media screen and (max-width: 500px) {
   .image-wrapper {

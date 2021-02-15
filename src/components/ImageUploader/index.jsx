@@ -24,9 +24,9 @@ const ImageUploader = ({ title }) => {
     console.log(images);
   };
   const deleteImage =(e , index)=>{
-    const newImagesArray = images.splice(index, 1);
-    // setImages([...images ,newImagesArray ]);
-// console.log(e , index , newImagesArray);
+    const newImagesArray = [...images]
+    newImagesArray.splice(index, 1);
+    setImages(newImagesArray);
   }
 
   return (
