@@ -10,13 +10,13 @@ const BadgeComponent = ({ type, text, theme }) => {
     className={`badge d-flex align-items-center ${theme}`}
   >
     {type&&
-    <div className="icon-container mr-2">
+    <span className="icon-container mr-2 d-block">
       <img src={type==="date"?DateIcon:TimeIcon} alt="time icon" className="w-100" />
-    </div>
+    </span>
     }
-    <div className={` ${theme === "orange"?"":"info-container"}`}>
+    <span className={` ${theme === "orange"?"":"info-container"} d-block`}>
       <span>{text}</span>
-    </div>
+    </span>
   </Badge>
   );
 };

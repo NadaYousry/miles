@@ -5,7 +5,12 @@ import ButtonComponent from "../Button";
 import CheckBox from "../CheckBox";
 import SelectMenuWithImage from "../SelectMenuWithImage";
 import "./style.css";
-const GroupLessonCardWithCheck = ({ lesson, isMobileScreen, index , length }) => {
+const GroupLessonCardWithCheck = ({
+  lesson,
+  isMobileScreen,
+  index,
+  length,
+}) => {
   return (
     <div className={"group-lessons-check-box group-lessons-container mb-3"}>
       {/* desktop screen card header */}
@@ -29,20 +34,20 @@ const GroupLessonCardWithCheck = ({ lesson, isMobileScreen, index , length }) =>
               <span className={`group-for ml-2`}>{lesson.groupFor}</span>
             </div>
             <div className={`date-and-time-info `}>
-                <div
-                  className={`d-flex align-items-center justify-content-end time-date-container w-100`}
-                >
-                  <BadgeComponent
-                    type={"time"}
-                    text={lesson.time}
-                    theme={"gray"}
-                  />
-                  <BadgeComponent
-                    type={"date"}
-                    text={lesson.date}
-                    theme={"gray"}
-                  />
-                </div>
+              <div
+                className={`d-flex align-items-center justify-content-end time-date-container w-100`}
+              >
+                <BadgeComponent
+                  type={"time"}
+                  text={lesson.time}
+                  theme={"gray"}
+                />
+                <BadgeComponent
+                  type={"date"}
+                  text={lesson.date}
+                  theme={"gray"}
+                />
+              </div>
             </div>
             <div className="d-flex align-items-center justify-content-center">
               <CheckBox
@@ -74,21 +79,21 @@ const GroupLessonCardWithCheck = ({ lesson, isMobileScreen, index , length }) =>
                   />
                   <span className={`group-for ml-2`}>{lesson.groupFor}</span>
                   <div className={`date-and-time-info`}>
-                      <div
-                        className={`d-flex align-items-center justify-content-end time-date-container w-100`}
-                      >
-                        <BadgeComponent
-                          type={"time"}
-                          text={lesson.time}
-                          theme={"gray"}
-                        />
-                        <BadgeComponent
-                          type={"date"}
-                          text={lesson.date}
-                          theme={"gray"}
-                        />
-                      </div>
+                    <div
+                      className={`d-flex align-items-center justify-content-end time-date-container w-100`}
+                    >
+                      <BadgeComponent
+                        type={"time"}
+                        text={lesson.time}
+                        theme={"gray"}
+                      />
+                      <BadgeComponent
+                        type={"date"}
+                        text={lesson.date}
+                        theme={"gray"}
+                      />
                     </div>
+                  </div>
                 </div>
                 <div className=" d-flex align-items-center justify-content-center">
                   <CheckBox
@@ -156,19 +161,25 @@ const GroupLessonCardWithCheck = ({ lesson, isMobileScreen, index , length }) =>
               >
                 {lesson.price}
               </span>
-              <ButtonComponent
-                text={"Register Now"}
-                theme={"orange"}
-                share={false}
-              />
-              <ButtonComponent
-                text={`Share this`}
-                theme={"white"}
-                share={true}
-              />
+              <div className="d-flex align-items-center flex-column ">
+                <div className="my-2 w-100">
+                  <ButtonComponent
+                    text={"Register Now"}
+                    theme={"orange"}
+                    share={false}
+                  />
+                </div>
+                <div className=" w-100">
+                  <ButtonComponent
+                    text={`Share this`}
+                    theme={"white"}
+                    share={true}
+                  />
+                </div>
+              </div>
             </div>
           </div>
-          {index+1 === length &&<SelectMenuWithImage/>}
+          {index + 1 === length && <SelectMenuWithImage />}
         </Card.Body>
       </Card>
     </div>

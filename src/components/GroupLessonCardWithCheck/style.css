@@ -6,24 +6,9 @@
 .group-lessons-container .card-body {
   padding: 0.5rem 1rem;
 }
-.group-lessons-container .btn {
-  border-radius: 8px;
-  font-size: 12px;
-  font-family: var(--boldFont);
-  margin-bottom: 6%;
-  text-transform: initial;
-  padding: 4% 7%;
-}
 .group-lessons-container .btn:not(.dropdown-toggle) {
   width: 60%;
 }
-.group-lessons-container .btn.share-btn {
-  padding: 4% 4%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .group-lessons-container .card {
   border: 1px solid var(--borderGray);
 }

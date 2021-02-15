@@ -17,7 +17,7 @@ const FaqFrom = () => {
                 placeholder="Start Typing"
               />
             </div>
-            <div>
+            <div className="col-12 col-lg-12 col-md-12 px-0 d-flex flex-column justify-content-between">
               <Form.Label className="address-label">FAQ ANSWER</Form.Label>
               <Form.Control
                 as="textarea"
@@ -26,12 +26,16 @@ const FaqFrom = () => {
                 placeholder="Start Typing"
               />
             </div>
-            <div className="d-flex align-items-center justify-content-center">
-              <ButtonComponent
-                share={""}
-                text={"Update"}
-                theme={"light-green"}
-              />
+            <div className="col-12 col-lg-12 col-md-12 px-0 d-flex align-items-center justify-content-center">
+              <div className="d-flex w-50 faq-button">
+                <div className="my-2 w-100">
+                  <ButtonComponent
+                    share={""}
+                    text={"Update"}
+                    theme={"light-green"}
+                  />
+                </div>
+              </div>
             </div>
           </Form.Group>
         </Form>
@@ -61,7 +65,7 @@ const FaqFrom = () => {
                   theme={"light-green"}
                 />
               </div>
-              <div className="d-flex align-items-center justify-content-end w-75 delete-btn">
+              <div className="d-flex align-items-center justify-content-end w-25 ml-auto delete-btn">
                 <ButtonComponent share={""} text={"DELETE"} theme={"gray"} />
               </div>
             </div>
@@ -93,7 +97,7 @@ const FaqFrom = () => {
                   theme={"light-green"}
                 />
               </div>
-              <div className="d-flex align-items-center justify-content-end w-75 delete-btn">
+              <div className="d-flex align-items-center justify-content-end w-25 ml-auto delete-btn">
                 <ButtonComponent share={""} text={"DELETE"} theme={"gray"} />
               </div>
             </div>

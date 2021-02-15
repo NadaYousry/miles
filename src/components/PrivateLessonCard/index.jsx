@@ -50,7 +50,7 @@ const PrivateLessonCard = ({ lesson, isMobileScreen }) => {
           <div className="row">
             <div className="col-12 col-lg-7 col-md-7 d-flex align-items-center">
               {!isMobileScreen && (
-                <div className="private-lessons-image-container d-flex align-items-center justify-content-center">
+                <div className="private-lessons-image-container d-flex align-items-center justify-content-center mr-3">
                   <div className="image-wrapper">
                     <img
                       src={lesson.image}

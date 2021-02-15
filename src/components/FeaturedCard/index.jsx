@@ -80,7 +80,7 @@ const FeaturedCard = () => {
                       </span>
                       <span className="feature-type green">{data.for}</span>
                     </Card.Text>
-                    <Card.Text className="feature-description description-info mb-2">
+                    <Card.Text className="feature-description description-info mb-4">
                       {data.description}
                     </Card.Text>
                   </div>

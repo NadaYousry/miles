@@ -21,6 +21,10 @@
   font-weight: 500;
   text-align: left;
 }
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
 .logo-container {
   width: 75px;
   height: 75px;

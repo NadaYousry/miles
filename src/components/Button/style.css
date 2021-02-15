@@ -109,11 +109,6 @@
 /* black */
 
 .black-btn {
-  font-size: 12px;
-  font-family: var(--boldFont);
-  display: inline-block !important;
-  padding: 4% 7%;
-  border-radius: 8px;
   background-color: var(--black);
   border-color: var(--black);
   color: var(--white);
@@ -123,7 +118,7 @@
   border-color: var(--black);
   color: var(--white);
 }
-.black-btn:focus {
+.black-btn.btn.btn-primary:focus {
   background-color: var(--black);
   border-color: var(--black);
   color: var(--white);
@@ -232,7 +227,7 @@
     width: 50% !important;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .btn:not(.light-green) {
     width: 100% !important;
   }

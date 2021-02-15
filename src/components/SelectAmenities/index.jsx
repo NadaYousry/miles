@@ -45,44 +45,58 @@ const SelectAmenities = ({ title }) => {
       name: "Fitness",
     },
   ];
-  
+
   const [selected, setSelected] = useState(false);
   const onCircleSelect = (e) => {
-    if(selected){
-      setSelected(false)
-    }else{
-      setSelected(true)
+    if (selected) {
+      setSelected(false);
+    } else {
+      setSelected(true);
     }
   };
   return (
-    <div className="form-group-container form-body">
+    <div className="form-group-container form-body amenity">
       <form className="form-group">
         <div className="row form-title">
-          <div className="col-12 d-flex align-items-center justify-content-between">
+          <div className="col-5 col-lg-7 col-md-5 d-flex align-items-center justify-content-between">
             <label className="form-label">{title}</label>
-            <ButtonComponent share={""} text={"Update"} theme={"light-green"} />
+          </div>
+          <div className="col-7 col-lg-5 col-md-7 d-flex flex-column justify-content-between">
+            <div className="d-flex align-items-center flex-column ">
+              <div className="my-2 w-100">
+                <ButtonComponent
+                  share={""}
+                  text={"Update"}
+                  theme={"light-green"}
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div className="form-body text-left px-0">
           <div className="row px-3">
-          <div className="section-separator col-12 pb-4 mb-4">
-          <label className="address-label">NUMBER OF COURTS</label>
-          <span className="d-block amwnity-label">7</span></div>
-          <div className="col-12 col-lg-7 d-flex justify-content-start flex-wrap ">
-          {amenities.map((amenity, index) => {
-            return (
-              <div className="d-inline-block mx-1 icon-container" key={index}>
-                <CirrcledIconContainer
-                selecting={true}
-                  icon={amenity.icon}
-                  name={amenity.name}
-                  theme={"normal-selecting"}
-                />
-              </div>
-            );
-          })}
+            <div className="section-separator col-12 pb-4 mb-4">
+              <label className="address-label">NUMBER OF COURTS</label>
+              <span className="d-block amwnity-label">7</span>
+            </div>
+            <div className="col-12 col-lg-7 d-flex justify-content-start flex-wrap ">
+              {amenities.map((amenity, index) => {
+                return (
+                  <div
+                    className="d-inline-block mx-1 icon-container"
+                    key={index}
+                  >
+                    <CirrcledIconContainer
+                      selecting={true}
+                      icon={amenity.icon}
+                      name={amenity.name}
+                      theme={"normal-selecting"}
+                    />
+                  </div>
+                );
+              })}
+            </div>
           </div>
-          </div>  
         </div>
       </form>
     </div>

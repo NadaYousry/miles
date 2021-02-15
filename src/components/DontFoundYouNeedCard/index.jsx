@@ -10,19 +10,26 @@ const DontFoundYouNeedCard = ({ isMobileScreen }) => {
       <Card>
         <Card.Body>
           <div className="row align-items-center">
-            <div className="col-12 col-lg-9 col-md-9 ">
+            <div className="col-12 col-lg-7 col-md-7 ">
               <h3>
                 Didn’t find what you need
-                <FontAwesomeIcon icon={faQuestion} className={"ml-2 question-icon"} />
+                <FontAwesomeIcon
+                  icon={faQuestion}
+                  className={"ml-2 question-icon"}
+                />
               </h3>
-              <p className={'contact-us'}>Please contact us, we always have a class for you.</p>
+              <p className={"contact-us"}>
+                Please contact us, we always have a class for you.
+              </p>
             </div>
-            <div className={`col-12 col-lg-3 col-md-3 d-flex justify-content-end`}>
-              <ButtonComponent
-                text={"Get in touch"}
-                theme={"black"}
-                share={false}
-              />
+            <div className="col-12 col-lg-5 col-md-5 d-flex flex-column justify-content-between">
+              <div className="my-2 w-100">
+                <ButtonComponent
+                  text={"Get in touch"}
+                  theme={"black"}
+                  share={false}
+                />
+              </div>
             </div>
           </div>
         </Card.Body>

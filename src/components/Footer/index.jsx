@@ -83,6 +83,7 @@ const Footer = () => {
                   {navLinks.map((navlink, index) => {
                     return (
                       <NavLink
+                        key={index}
                         activeClassName="active"
                         to={navlink.url}
                         className="nav-link"
