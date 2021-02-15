@@ -13,6 +13,7 @@
   margin-bottom: 6%;
   text-transform: initial;
   padding: 4% 7%;
+  width: 70%;
 }
 .group-lessons-container .btn.share-btn {
   padding: 4% 4%;
@@ -73,9 +74,19 @@
   width: 40%;
   margin-left: auto;
 }
+@media screen and (max-width: 1050px) {
+  .group-lessons-container .btn {
+    width: 80% !important;
+  }
+}
 @media screen and (max-width: 1024px) {
   .group-lessons-container .date-and-time-info {
     width: 55%;
+  }
+  .group-lessons-container .btn.share-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 786px) {
@@ -117,12 +128,6 @@
   }
   .group-lessons-container .btn {
     width: 100% !important;
-  }
-  .group-lessons-container .btn.share-btn {
-    width: 100% !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .group-lessons-description {
     font-size: 12px;

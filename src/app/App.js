@@ -9,6 +9,17 @@ import Footer from "../components/Footer";
 function App() {
   const [isMobileScreen, setIsMobileScreen] = useState(false);
   const [currentWidth, setCurrentWidth] = useState(0);
+  const [activePath, setActivePath] = useState("");
+  useEffect(()=>{
+    history.listen(()=>{
+      let homePage = document.getElementById('home-container')
+      if(homePage){
+        homePage.scrollIntoView({behavior:'smooth'})
+      }    })
+  },[])
+useEffect(()=>{
+ 
+},[activePath])
   useEffect(() => {
     window.addEventListener("load", (e) => {
       if (window.innerWidth < 768) {

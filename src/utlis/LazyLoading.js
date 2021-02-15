@@ -24,6 +24,9 @@ export const ReviewsPage = React.lazy(() =>
 export const GalleryPage = React.lazy(() =>
   import("./../Containers/GalleryPage")
 );
+export const FAQsPage = React.lazy(() =>
+  import("./../Containers/FAQsPage")
+);
 export const Loader = React.lazy(() =>
   import("./../components/Loader")
 );

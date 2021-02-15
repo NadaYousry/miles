@@ -14,6 +14,7 @@ import ReviewWithProgress from "../../components/ReviewWithProgress";
 import FeaturedCard from "../../components/FeaturedCard";
 import FAQs from "../../components/FAQs/FAQs";
 import "./style.css";
+import { Link } from "react-router-dom";
 const AboutPage = ({ isMobileScreen }) => {
   const fiveIconData = [
     {
@@ -37,6 +38,32 @@ const AboutPage = ({ isMobileScreen }) => {
       name: "Cafe",
     },
   ];
+  const faqsData = [
+    {
+      id:1,
+      question: "What are the rules in place related to Corvid-19 regulations",
+      answer:
+        "The condition for such operation is that public transport vehicles are only permitted to transport persons permitted to travel between Provinces in terms of the Regulations. ",
+    },
+    {
+      id:2,
+      question: "What are the rules in place related to Corvid-19 regulations",
+      answer:
+        "The condition for such operation is that public transport vehicles are only permitted to transport persons permitted to travel between Provinces in terms of the Regulations. ",
+    },
+    {
+      id:3,
+      question: "How quickly can I get a new slot",
+      answer:
+        "The condition for such operation is that public transport vehicles are only permitted to transport persons permitted to travel between Provinces in terms of the Regulations. ",
+    },
+    {
+      id:4,
+      question: "How many students are permitted in a class",
+      answer:
+        "The condition for such operation is that public transport vehicles are only permitted to transport persons permitted to travel between Provinces in terms of the Regulations. ",
+    },
+  ];
   return (
     <>
       <section className="row  section-separator mb-5">
@@ -45,11 +72,11 @@ const AboutPage = ({ isMobileScreen }) => {
             !isMobileScreen ? "section-separator-right" : ""
           }`}
         >
-        <FiveStarsRating
-          ratingNumber={"4.5"}
-          peopleNumber={"122"}
-          theme={"dark-blue"}
-        />
+          <FiveStarsRating
+            ratingNumber={"4.5"}
+            peopleNumber={"122"}
+            theme={"dark-blue"}
+          />
           <p className="section-separator pb-4">
             Clubhouse Woodridge Tennis Academy offers amazing recently
             re-surfaced Tournament Ready courts servicing North Beach, Glenwood,
@@ -65,7 +92,12 @@ const AboutPage = ({ isMobileScreen }) => {
                     className=" d-flex align-items-center justify-content-center flex-column"
                     key={index}
                   >
-                    <CircledIconContainer selecting={false} theme={'normal'} icon={data.icon} name={data.name} />
+                    <CircledIconContainer
+                      selecting={false}
+                      theme={"normal"}
+                      icon={data.icon}
+                      name={data.name}
+                    />
                   </div>
                 );
               })}
@@ -115,8 +147,21 @@ const AboutPage = ({ isMobileScreen }) => {
           <h2 className="sub-heading text-left mb-3">FAQ</h2>
           <div className="faq-container">
             <div className="row no-gutters align-items-start">
-              <div className="col-12">
-                <FAQs isMobileScreen={isMobileScreen} />
+              <div className="col-12">  
+              <FAQs faqsData={faqsData}  isMobileScreen={isMobileScreen} />
+                <div className="row view-all-link ">
+                  <div className="col-12">
+                    <div className="link text-right w-100">
+                      <p
+                        className={`${
+                          isMobileScreen ? "text-center" : "text-right"
+                        }`}
+                      >
+                        <Link to="/faq">view all</Link>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
