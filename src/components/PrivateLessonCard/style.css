@@ -3,21 +3,6 @@
 .private-lessons-container {
   text-align: left;
 }
-.private-lessons-container .btn {
-  border-radius: 8px;
-  font-size: 12px;
-  font-family: var(--boldFont);
-  margin-bottom: 6%;
-  text-transform: initial;
-  padding: 4% 7%;
-  width: 70%;
-}
-.private-lessons-container .btn.share-btn {
-  padding: 4% 4%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .private-lessons-container .card {
   border: 1px solid var(--borderGray);
@@ -61,24 +46,16 @@
 .private-lessons-container .star-icon-wrapper {
   margin: 0 !important;
 }
-@media screen and (max-width: 1050px) {
-  .private-lessons-container .btn {
-    width: 80% !important;
-  }
-}
 @media screen and (max-width: 786px) {
   .private-lessons-container {
     text-align: left;
   }
-  .private-lessons-container .btn {
-    width: 100% !important;
-  }
-  .private-lessons-container .btn.share-btn {
-    width: 100% !important;
-  }
   .private-lessons-description,
   .rate-from {
     font-size: 12px;
+  }
+  .private-lessons-container .btn {
+    width: 75% !important;
   }
 
   .private-lessons-price {
@@ -87,7 +64,12 @@
 }
 
 @media screen and (max-width: 500px) {
+  .private-lessons-description,
+  .rate-from,
   .private-lessons-container {
     text-align: center;
+  }
+  .private-lessons-container .btn {
+    width: 100% !important;
   }
 }

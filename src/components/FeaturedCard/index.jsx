@@ -99,7 +99,7 @@ const FeaturedCard = () => {
                         theme={"gray"}
                       />
                     </div>
-                    <div className=" feature-button d-flex align-items-center flex-column ">
+                    <div className="d-flex align-items-center flex-column ">
                       <div className="my-2 w-100">
                         <ButtonComponent
                           text={"Register Now"}

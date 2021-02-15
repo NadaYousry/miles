@@ -111,8 +111,11 @@
 }
 
 @media screen and (max-width: 500px) {
+  .footer-container .nav-link {
+    margin-bottom: 2%;
+  }
   .column-container {
-    padding-bottom: 6% !important;
+    padding-bottom: 5% !important;
   }
 
   .footer-container .container {

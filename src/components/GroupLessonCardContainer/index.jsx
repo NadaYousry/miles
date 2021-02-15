@@ -4,7 +4,7 @@ import DontFoundYouNeedCard from "../DontFoundYouNeedCard";
 import SelectMenuComponent from "../SelectMenu";
 import "./style.css";
 const GroupLessonCardContainer = ({ isMobileScreen }) => {
-  const privateLessons = [
+  const groupLessons = [
     {
       groupFor: "Beginner - Kids | 4-7",
       groupName: "Footwork Patterns",
@@ -99,9 +99,9 @@ const GroupLessonCardContainer = ({ isMobileScreen }) => {
     }
   ];
   return (
-    <div className={"private-lessons-container"}>
+    <div className={"group-lessons-container"}>
       <SelectMenuComponent filters={filterOptions} />
-      {privateLessons.map((lesson, index) => {
+      {groupLessons.map((lesson, index) => {
         return (
           <div key={index}>
             <GroupLessonCard lesson={lesson} isMobileScreen={isMobileScreen} />

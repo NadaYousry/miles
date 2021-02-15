@@ -1,18 +1,6 @@
 @import "./../../generalStyles/variables.css";
 
 .btn {
-}
-.share-btn {
-  font-family: var(--regularFont) !important;
-  display: flex !important;
-  align-items: center;
-  justify-content: space-around;
-}
-.share-btn img {
-  margin-right: 6%;
-}
-/* green button */
-.green-btn {
   width: 50%;
   font-size: 0.7rem;
   font-family: var(--boldFont);
@@ -20,6 +8,15 @@
   align-items: center;
   justify-content: center;
   padding: 2% 5%;
+}
+.share-btn {
+  font-family: var(--regularFont) !important;
+}
+.share-btn img {
+  margin-right: 6%;
+}
+/* green button */
+.green-btn {
   background-color: var(--green);
   border-color: var(--green);
 }
@@ -37,8 +34,8 @@
 /* sky blue button */
 
 .sky-blue-btn {
-  display: inline-block !important;
-  padding: 2% 5%;
+  /* display: inline-block !important;
+  padding: 2% 5%; */
   background-color: var(--skyBlue);
   border-color: var(--skyBlue);
 }
@@ -148,9 +145,6 @@
 /* orange button */
 
 .orange-btn {
-  /* width: 50%; */
-  display: inline-block !important;
-  padding: 2% 5%;
   background-color: var(--orange);
   border-color: var(--orange);
   color: var(--white);
@@ -178,12 +172,6 @@
 /* light green */
 
 .light-green-btn {
-  font-size: 0.8rem;
-  font-family: var(--boldFont);
-  border-radius: 6px;
-  width: auto !important;
-  padding: 0.375rem 1.2rem;
-  display: inline-block !important;
   background-color: var(--lightGreen);
   border-color: var(--lightGreen);
   color: var(--white);
@@ -209,12 +197,6 @@
 /* gray button */
 
 .gray-btn {
-  font-size: 0.8rem;
-  font-family: var(--boldFont);
-  border-radius: 6px;
-  width: auto !important;
-  padding: 0.375rem 1.2rem;
-  display: inline-block !important;
   background-color: var(--baleWhite);
   border-color: var(--baleWhite);
   color: var(--black);
@@ -246,16 +228,12 @@
   color: var(--black);
 }
 @media screen and (max-width: 786px) {
-  .btn.green-btn {
+  .btn {
     width: 50% !important;
   }
 }
 @media screen and (max-width: 500px) {
   .btn:not(.light-green) {
     width: 100% !important;
-  }
-
-  .share-btn {
-    justify-content: center;
   }
 }
