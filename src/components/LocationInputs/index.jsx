@@ -24,7 +24,7 @@ const LocationInputs = ({ title }) => {
         </div>
         <div className="form-body text-left px-0">
           <div className="input-wrapper col-12">
-            <label className="d-block address-label">STREET NUMBER</label>
+            <label className="d-block form-label">STREET NUMBER</label>
             <input
               type="text"
               className="address-input d-block w-100"
@@ -32,7 +32,7 @@ const LocationInputs = ({ title }) => {
             />
           </div>
           <div className="input-wrapper col-12">
-            <label className="d-block address-label">STREET NAME</label>
+            <label className="d-block form-label">STREET NAME</label>
             <input
               type="text"
               className="address-input d-block w-100"
@@ -40,7 +40,7 @@ const LocationInputs = ({ title }) => {
             />
           </div>
           <div className="input-wrapper col-12">
-            <label className="d-block address-label">CITY / TOWN</label>
+            <label className="d-block form-label">CITY / TOWN</label>
             <input
               type="text"
               className="address-input d-block w-100"
@@ -48,7 +48,7 @@ const LocationInputs = ({ title }) => {
             />
           </div>
           <div className="input-wrapper col-12">
-            <label className="d-block address-label">STATE</label>
+            <label className="d-block form-label">STATE</label>
             <input
               type="text"
               className="address-input d-block w-100"
@@ -56,7 +56,7 @@ const LocationInputs = ({ title }) => {
             />
           </div>
           <div className="input-wrapper col-12">
-            <label className="d-block address-label">AREA CODE</label>
+            <label className="d-block form-label">AREA CODE</label>
             <input
               type="text"
               className="address-input d-block w-100"

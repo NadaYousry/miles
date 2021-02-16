@@ -16,7 +16,7 @@ const HomePageBodyContainer = ({ isMobileScreen }) => {
               </h1>
             </div>
           </div>
-          <div className="row  mb-5">
+          <div className="row">
             <div className="col-12">
               <Nav className={`${isMobileScreen?"px-0":""} navbar`}>
                 <NavLink

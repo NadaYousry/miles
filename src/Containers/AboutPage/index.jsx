@@ -142,7 +142,7 @@ const AboutPage = ({ isMobileScreen }) => {
           </div>
         </div>
       </section>
-      <section className="row section-separator  pb-5 mb-5">
+      <section className="row section-separator  pb-5">
         <div className="col-12 col-md-12 col-lg-12">
           <h2 className="sub-heading text-left mb-3">FAQ</h2>
           <div className="faq-container">
@@ -157,7 +157,7 @@ const AboutPage = ({ isMobileScreen }) => {
                           isMobileScreen ? "text-center" : "text-right"
                         }`}
                       >
-                        <Link to="/faq">view all</Link>
+                        <Link to="/faq">View all</Link>
                       </p>
                     </div>
                   </div>

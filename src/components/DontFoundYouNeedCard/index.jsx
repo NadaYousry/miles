@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card } from "react-bootstrap";
 import { faQuestion } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ButtonComponent from "../Button";
+import ContactFromModal from "../ContactFromModal";
 import "./style.css";
-const DontFoundYouNeedCard = ({ isMobileScreen }) => {
+const DontFoundYouNeedCard = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const handleCloseModal = () => setOpenModal(false);
+  const handleOpenModal = () => setOpenModal(true);
   return (
+    <>
     <div className={"do-not-find-need-container mb-3"}>
       <Card>
         <Card.Body>
@@ -28,13 +33,19 @@ const DontFoundYouNeedCard = ({ isMobileScreen }) => {
                   text={"Get in touch"}
                   theme={"black"}
                   share={false}
+                  onClickButton={handleOpenModal}
                 />
               </div>
             </div>
           </div>
         </Card.Body>
       </Card>
-    </div>
+    </div> 
+    <ContactFromModal
+    handleClose={handleCloseModal}
+    openModal={openModal}
+  />
+</>
   );
 };
 

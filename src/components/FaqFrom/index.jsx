@@ -10,7 +10,7 @@ const FaqFrom = () => {
         <Form className=" text-left  section-separator mb-5 pb-5">
           <Form.Group controlId="">
             <div>
-              <Form.Label className="address-label">FAQ QUESTION</Form.Label>
+              <Form.Label >FAQ QUESTION</Form.Label>
               <Form.Control
                 type="text"
                 className="faq-form-control"
@@ -18,7 +18,7 @@ const FaqFrom = () => {
               />
             </div>
             <div className="col-12 col-lg-12 col-md-12 px-0 d-flex flex-column justify-content-between">
-              <Form.Label className="address-label">FAQ ANSWER</Form.Label>
+              <Form.Label >FAQ ANSWER</Form.Label>
               <Form.Control
                 as="textarea"
                 rows={3}
@@ -43,7 +43,7 @@ const FaqFrom = () => {
         <Form className=" text-left faq-answes mb-4 pb-4 section-separator">
           <Form.Group controlId="">
             <div>
-              <p className="address-label  text-left">
+              <p className="form-label  text-left">
                 What are the rules in place related to Corvid-19 regulations?
               </p>
             </div>
@@ -75,7 +75,7 @@ const FaqFrom = () => {
         <Form className=" text-left faq-answes">
           <Form.Group controlId="">
             <div>
-              <p className="address-label  text-left">
+              <p className="form-label  text-left">
                 What are the rules in place related to Corvid-19 regulations?
               </p>
             </div>

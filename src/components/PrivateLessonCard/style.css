@@ -15,14 +15,14 @@
 }
 
 .private-lessons-image-container {
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   border: 1px solid var(--borderGray);
 }
 .private-lessons-image-container .image-wrapper {
-  height: 90px;
-  width: 90px;
+  height: 85px;
+  width: 85px;
   border-radius: 50%;
   overflow: hidden;
   box-sizing: content-box;
@@ -64,6 +64,14 @@
 }
 
 @media screen and (max-width: 500px) {
+  .private-lessons-image-container {
+    height: 100px;
+    width: 100px;
+  }
+  .private-lessons-image-container .image-wrapper {
+    height: 90px;
+    width: 90px;
+  }
   .private-lessons-description,
   .rate-from,
   .private-lessons-container {

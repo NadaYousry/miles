@@ -1,0 +1,49 @@
+@import "./../../generalStyles/variables.css";
+.contact-form .single-check-box-row {
+  border: none;
+}
+
+.contact-form .checkbox-form-group input:checked + label:after {
+  left: 1%;
+}
+
+.contact-form .checkbox-form-group label:before {
+  left: 0%;
+  background-color: var(--baleWhite);
+  border: 1px solid var(--green);
+}
+
+.contact-form .checkbox-form-group label span {
+  margin-left: 2px;
+}
+.contact-form .form-data {
+  margin-bottom: 3%;
+}
+.contact-form .checkbox-form-group {
+  padding: 0.5% 0%;
+}
+
+.contact-form,
+.contact-form input {
+  font-size: 0.9rem;
+}
+
+.contact-form .modal-header h3:after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 0%;
+  height: 3px;
+  width: 40px;
+  background-color: var(--green);
+}
+.loading-modal-container {
+  padding: 15%;
+}
+.loading-modal-container .loader-container {
+  position: relative;
+}
+
+.loading-modal-container .loader-container #pgring {
+  transform: translate(0);
+}

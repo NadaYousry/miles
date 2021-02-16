@@ -67,7 +67,7 @@ const SelectMenuWithImage = () => {
       </DropdownButton>
       <div className="assign-coach">
         <div className="row flex-column p-3">
-          <p className="address-label d-inline-block">Assign a coach</p>
+          <p className="form-label d-inline-block">Assign a coach</p>
           <div className="assign-coach-card p-3  d-flex align-items-center  flex-wrap">
             {coachs.map((coach, index) => {
               return (

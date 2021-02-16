@@ -76,7 +76,7 @@ const SelectAmenities = ({ title }) => {
         <div className="form-body text-left px-0">
           <div className="row px-3">
             <div className="section-separator col-12 pb-4 mb-4">
-              <label className="address-label">NUMBER OF COURTS</label>
+              <label className="form-label">NUMBER OF COURTS</label>
               <span className="d-block amwnity-label">7</span>
             </div>
             <div className="col-12 col-lg-7 d-flex justify-content-start flex-wrap ">

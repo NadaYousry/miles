@@ -44,7 +44,7 @@ const SelectDays = ({ title }) => {
           </div>
         </div>
         <div className="form-body text-left px-0">
-          <label className="address-label px-3">SELECT ALL WEEK DAYS</label>
+          <label className="form-label px-3">SELECT ALL WEEK DAYS</label>
           <div className="row px-3">
             {days.map((day, index) => {
               return (

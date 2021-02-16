@@ -56,10 +56,51 @@ a:hover {
   background: var(--green);
   border-radius: 10px;
 }
+
+.form-label {
+  font-family: var(--boldFont);
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+}
+.modal h3,
+.modal p {
+  text-align: center;
+}
+
+.modal h3 {
+  font-family: var(--boldFont);
+  font-size: 1.8rem;
+}
+
+/* form style  */
+.form-title {
+  margin-bottom: 0.5rem;
+}
+.form-control {
+  border: none;
+  max-height: 2000px;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  background-color: var(--baleWhite);
+}
+.form-group {
+  position: relative;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem #62d5603d;
+  background-color: var(--baleWhite);
+}
+.fade .modal-dialog {
+  transform: none !important;
+}
 @media screen and (max-width: 500px) {
   p {
     font-size: 11px;
     text-align: center;
     line-height: 1.2rem;
+  }
+  .form-label {
+    font-size: 0.8rem;
   }
 }

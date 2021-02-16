@@ -1,0 +1,15 @@
+.message {
+  padding: 2%;
+}
+.message h4 {
+  text-align: center;
+  color: var(--green);
+}
+.message p {
+  font-size: 1rem;
+  color: var(--textGray);
+}
+.message-icon {
+  font-size: 5rem;
+  color: var(--green);
+}

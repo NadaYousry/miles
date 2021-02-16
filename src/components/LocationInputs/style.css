@@ -18,14 +18,14 @@
   color: #d8d8d8;
 }
 
-.address-label {
+.form-label {
   font-family: var(--boldFont);
   font-size: 0.75rem;
   letter-spacing: 0.1rem;
 }
 
 @media screen and (max-width: 500px) {
-  .address-label {
+  .form-label {
     font-size: 0.7rem;
   }
   .address-input {

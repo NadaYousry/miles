@@ -11,6 +11,7 @@ const ModalComponent = ({
   return (
     <>
       <Modal
+      className="social-media-modal"
         show={openModal}
         onHide={handleClose}
         size="lg"
