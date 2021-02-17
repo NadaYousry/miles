@@ -166,7 +166,7 @@ const ContactFromModal = ({ handleClose, openModal }) => {
               <div className="col-12">
                 <div className="form-data">
                   <Form.Label>
-                    AWhat are you most interested in at The Country Club At
+                    What are you most interested in at The Country Club At
                     Woodmore. Select all that Apply
                   </Form.Label>
                   {selectIntrests.map((intrest, index) => {
@@ -186,7 +186,8 @@ const ContactFromModal = ({ handleClose, openModal }) => {
               <div className="col-12">
                 <div className="form-data">
                   <Form.Label>
-                    How did you learn about this virtual training program?
+                    How did you learn about our Programs or Facility training
+                    program?
                   </Form.Label>
                   {selectHowKnowTraining.map((way, index) => {
                     return (
@@ -200,12 +201,14 @@ const ContactFromModal = ({ handleClose, openModal }) => {
                       </div>
                     );
                   })}
+                  <div className="mb-2">
                   <CheckBox
                     showOptions={true}
                     option={"other"}
                     theme=""
                     onClick={toggleSelectOtherCheckBox}
                   />
+                  </div>
                   {selectOther && (
                     <Form.Control
                       type="text"
@@ -218,7 +221,7 @@ const ContactFromModal = ({ handleClose, openModal }) => {
               <div className="col-12">
                 <div className="form-data">
                   <Form.Label>
-                    How did you learn about this virtual training program?
+                  Any additional comments or information you would like to Know
                   </Form.Label>
                   <Form.Control as="textarea" name="opinion" />
                 </div>
@@ -228,7 +231,7 @@ const ContactFromModal = ({ handleClose, openModal }) => {
               <div className="w-50">
                 <ButtonComponent
                   share={""}
-                  text={"Update"}
+                  text={"Submit"}
                   theme={"light-green"}
                   type={"submit"}
                 />

@@ -11,6 +11,7 @@
   cursor: pointer;
   background-color: var(--baleWhite) !important;
   padding: 2% !important;
+  flex-direction: row !important;
 }
 .arrow-icon-container {
   transition: all 0.2s ease-in-out;

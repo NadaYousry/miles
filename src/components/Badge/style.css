@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 786px) {
   .badge .icon-container {
-    width: 10%;
+    width: 12%;
   }
   .badge.orange {
     text-align: center;
@@ -67,7 +67,6 @@
     margin-bottom: 5% !important;
   }
   .badge.orange {
-    /* width: 70%; */
     font-family: var(--boldFont);
     font-size: 0.8em;
   }
