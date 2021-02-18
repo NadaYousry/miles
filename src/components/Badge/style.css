@@ -57,11 +57,9 @@
     text-align: center;
     margin-bottom: 4% !important;
     margin-top: 4% !important;
-    -moz-paddong: 3% 5%;
-    -ms-paddong: 3% 5%;
-    -webkit-padding: 3% 5%;
-    -o-padding: 3% 5%;
-    padding: 3% 5%;
+
+    padding-inline: 5%;
+    padding-block: 3%;
     border-radius: 6px;
   }
 }
