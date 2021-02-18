@@ -6,7 +6,7 @@ const FAQs = ({faqsData,isMobileScreen}) => {
  
   return (
     <>
-      <div className="card-container pb-3 ">
+      <div className="card-container pb-3 faq">
         {faqsData?.map((data, index) => {
           return (
             <AccordionComponent key={index} data={data}/>

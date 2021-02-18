@@ -6,7 +6,7 @@
   letter-spacing: 1px;
   line-height: 1.5rem;
 }
-.accordion > .card > .card-header {
+.faq .accordion > .card > .card-header {
   border: none;
   cursor: pointer;
   background-color: var(--baleWhite);
@@ -19,7 +19,7 @@ h3 {
   background-color: var(--baleWhite);
 }
 
-.accordion .card {
+.faq .accordion .card {
   border: none;
 }
 .collapse .card-body {

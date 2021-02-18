@@ -35,7 +35,8 @@
   font-size: 0.95rem;
   font-weight: lighter;
   color: #000000;
-  padding: 1% 2%;
+  padding: 1% 0;
+  margin-right: 3%;
   text-transform: capitalize;
 }
 .nav-link.active {
@@ -52,7 +53,7 @@
   height: 2px;
   background-color: var(--darkBlue);
   border-radius: 14px;
-  left: 40%;
+  left: 30%;
   transform: translate(-50%);
   bottom: -10px;
 }
@@ -84,12 +85,19 @@
     font-size: 17px;
   }
   .navbar .nav-link {
-    font-size: 10px;
+    font-size: 0.75rem;
   }
   .nav-link.active::after {
     bottom: -5px;
   }
   .nav-tabs {
     margin-bottom: 18%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .nav-link {
+    padding: 1% 0;
+    margin-right: 5%;
+    margin-bottom: 5%;
   }
 }
