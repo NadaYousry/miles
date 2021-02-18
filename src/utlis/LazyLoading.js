@@ -1,31 +1,31 @@
 import React from "react";
 
 export const AdminPanel = React.lazy(() =>
-  import("./../Containers/AdminPanel")
+  import("./../containers/AdminPanel")
 );
 export const Home = React.lazy(() =>
-  import("./../Containers/HomePage")
+  import("./../containers/HomePage")
 );
 export const HomePageBodyContainer = React.lazy(() =>
-  import("./../Containers/HomePageBodyContainer")
+  import("./../containers/HomePageBodyContainer")
 );
 export const AboutPage = React.lazy(() =>
-  import("./../Containers/AboutPage")
+  import("./../containers/AboutPage")
 );
 export const PrivateLessonsPage = React.lazy(() =>
-  import("./../Containers/PrivateLessonsPage")
+  import("./../containers/PrivateLessonsPage")
 );
 export const GroupLessonsPage = React.lazy(() =>
-  import("./../Containers/GroupLessonsPage")
+  import("./../containers/GroupLessonsPage")
 );
 export const ReviewsPage = React.lazy(() =>
-  import("./../Containers/ReviewsPage")
+  import("./../containers/ReviewsPage")
 );
 export const GalleryPage = React.lazy(() =>
-  import("./../Containers/GalleryPage")
+  import("./../containers/GalleryPage")
 );
 export const FAQsPage = React.lazy(() =>
-  import("./../Containers/FAQsPage")
+  import("./../containers/FAQsPage")
 );
 export const Loader = React.lazy(() =>
   import("./../components/Loader")

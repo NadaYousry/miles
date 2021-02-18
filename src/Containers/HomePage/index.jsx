@@ -1,26 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Carousels from "../../components/Carousel";
+import useWindowResize from "../../cutomHooks/useWindowResize";
 import HomePageBodyContainer from "../HomePageBodyContainer";
 const Home = () => {
-  const [isMobileScreen, setIsMobileScreen] = useState(false);
-  const [currentWidth, setCurrentWidth] = useState(0);
-  useEffect(() => {
-    window.addEventListener("load", (e) => {
-      if (window.innerWidth < 768) {
-        setIsMobileScreen(true);
-      } else {
-        setIsMobileScreen(false);
-      }
-    });
-    window.addEventListener("resize", (e) => {
-      setCurrentWidth(window.innerWidth);
-      if (window.innerWidth < 768) {
-        setIsMobileScreen(true);
-      } else {
-        setIsMobileScreen(false);
-      }
-    });
-  }, [currentWidth]);
+  const isMobileScreen = useWindowResize();
   return (
     <>
       <Carousels isMobileScreen={isMobileScreen} />

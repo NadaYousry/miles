@@ -5,32 +5,15 @@ import history from "./history";
 import NavBar from "../components/Navbar";
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
+import useWindowResize from "../cutomHooks/useWindowResize";
 
 function App() {
-  const [isMobileScreen, setIsMobileScreen] = useState(false);
-  const [currentWidth, setCurrentWidth] = useState(0);
-  useEffect(() => {
-    window.addEventListener("load", (e) => {
-      if (window.innerWidth < 768) {
-        setIsMobileScreen(true);
-      } else {
-        setIsMobileScreen(false);
-      }
-    });
-    window.addEventListener("resize", (e) => {
-      setCurrentWidth(window.innerWidth);
-      if (window.innerWidth < 768) {
-        setIsMobileScreen(true);
-      } else {
-        setIsMobileScreen(false);
-      }
-    });
-  }, [currentWidth]);
+  const isMobileScreen = useWindowResize();
   return (
     <div className="App">
       <NavBar isMobileScreen={isMobileScreen} />
       <Router history={history}>{Routes}</Router>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

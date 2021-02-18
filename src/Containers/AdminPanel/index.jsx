@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import useWindowResize from "../../cutomHooks/useWindowResize";
 import TextAreaFrom from "../../components/TextAreaFrom";
 import TextInput from "../../components/TextInput";
 import LocationInputs from "../../components/LocationInputs";
@@ -11,25 +12,7 @@ import PrivateLessonCardContainer from "../../components/PrivateLessonCardContai
 import FaqFrom from "../../components/FaqFrom";
 import "./style.css";
 const AdminPanel = () => {
-  const [isMobileScreen, setIsMobileScreen] = useState(false);
-  const [currentWidth, setCurrentWidth] = useState(0);
-  useEffect(() => {
-    setCurrentWidth(window.innerWidth);
-    if (window.outerWidth < 768) {
-      setIsMobileScreen(true);
-    } else {
-      setIsMobileScreen(false);
-    }
-
-    window.addEventListener("resize", (e) => {
-      setCurrentWidth(window.innerWidth);
-      if (window.outerWidth < 768) {
-        setIsMobileScreen(true);
-      } else {
-        setIsMobileScreen(false);
-      }
-    });
-  }, [currentWidth]);
+  const isMobileScreen = useWindowResize();
   return (
     <div className="admin-panel-container container">
       <TextInput title={"Title"} wordsValue={200} />
