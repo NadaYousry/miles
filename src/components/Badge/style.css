@@ -57,8 +57,10 @@
     text-align: center;
     margin-bottom: 4% !important;
     margin-top: 4% !important;
-    padding: 3% 5%;
     border-radius: 6px;
+  }
+  .badge.orange span {
+    padding: 3% 5%;
   }
 }
 
