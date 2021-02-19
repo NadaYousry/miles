@@ -1,5 +1,9 @@
 @import "./../../generalStyles/variables.css";
 
+#home.container {
+  width: 90%;
+  max-width: 90%;
+}
 .carousel {
   height: 500px;
   max-height: 500px;
