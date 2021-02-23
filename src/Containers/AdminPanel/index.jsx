@@ -10,11 +10,11 @@ export const ItemsContext =React.createContext();
 export const ColumnContext =React.createContext();
 const AdminPanel = () => {
   const [itemsFromBackend, setItemsFromBackend] = useState([
-    { id: "1", name: "Tennis Class", place: "The country club", price: "60"  , status:"active"},
-    { id: "2", name: "Yoga Class", place: "The country club", price: "50"  , status:"completed"},
-    { id: "3", name: "Tennis Class", place: "The country club", price: "80"  , status:"active"},
-    { id: "4", name: "Fitness Class", place: "The country club", price: "150" , status:"completed" },
-    { id: "5", name: "Yoga Class", place: "The country club", price: "100" , status:"soon" },
+    { id: "1", name: "Tennis Class", place: "The country club", price: "60"  , status:"active" ,registration_count:"15/20" ,date:"June 10th -Aug 30th" , time:'Monday 7:00PM -8:00PM'},
+    { id: "2", name: "Yoga Class", place: "The country club", price: "50"  , status:"completed" ,registration_count:"5/5" ,date:"June 10th -Aug 30th" , time:'Monday 7:00PM -8:00PM'},
+    { id: "3", name: "Tennis Class", place: "The country club", price: "80"  , status:"active" ,registration_count:"6/10" ,date:"June 10th -Aug 30th" , time:'Monday 7:00PM -8:00PM'},
+    { id: "4", name: "Fitness Class", place: "The country club", price: "150" , status:"completed" ,registration_count:"8/10" ,date:"June 10th -Aug 30th" , time:'Monday 7:00PM -8:00PM' },
+    { id: "5", name: "Yoga Class", place: "The country club", price: "100" , status:"soon" ,registration_count:"7/15" ,date:"June 10th -Aug 30th" , time:'Monday 7:00PM -8:00PM' },
   ]);
   const [columnsFromBackend,setColumnsFromBackend] = useState({
     potentialClassColumn: {
