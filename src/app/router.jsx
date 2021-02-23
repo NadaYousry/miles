@@ -8,7 +8,7 @@ export const Routes = (
   <Suspense fallback={<Loader/>}>
     <Router history={history}>
       <Switch>
-        <LazyComponents.AdminPanel path="/admin" exact/>
+        <LazyComponents.AdminPanel path="/admin"/>
         <LazyComponents.Home path="/" />
         <LazyComponents.HomePageBodyContainer path="/about" />
       </Switch>
