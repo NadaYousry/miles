@@ -4,13 +4,10 @@ import ButtonComponent from "../Button";
 import CheckBox from "../CheckBox";
 import Loader from "../Loader";
 import Message from "../Message";
-import SelectMenuComponent from "../SelectMenu";
 import { ColumnContext, ItemsContext } from "./../../containers/AdminPanel";
 
 import "./style.css";
-const AddClassFromModal = ({ handleClose, openModal }) => {
-  const [sucessMessage, setSucessMessage] = useState(false);
-  const [loader, setLoader] = useState(false);
+const AddClassFrom = ({handleClose , handleCloseButton , setSucessMessage ,setLoader  }) => {
   let [itemsFromBackend, setItemsFromBackend] = useContext(ItemsContext);
   let [columnsFromBackend, setColumnsFromBackend] = useContext(ColumnContext);
 
@@ -26,12 +23,6 @@ const AddClassFromModal = ({ handleClose, openModal }) => {
     },
   ];
   useEffect(() => {}, [itemsFromBackend, columnsFromBackend]);
-  const handleCloseButton = () => {
-    handleClose();
-    setTimeout(() => {
-      setSucessMessage(false);
-    }, 500);
-  };
   // submit form
   const onSumbitAddTask = (e) => {
     e.preventDefault();
@@ -42,7 +33,7 @@ const AddClassFromModal = ({ handleClose, openModal }) => {
       name: e.target.name.value,
       place: e.target.place.value,
       price: e.target.price.value,
-      status:e.target.status.value,
+      status: e.target.status.value,
     };
     setItemsFromBackend([...itemsFromBackend, taskData]);
     setColumnsFromBackend({
@@ -70,16 +61,10 @@ const AddClassFromModal = ({ handleClose, openModal }) => {
       setSucessMessage(true);
     }, 500);
   };
-  const renderLoader = () => {
-    return (
-      <div className="loading-modal-container">
-        <Loader />
-      </div>
-    );
-  };
-  const renderModalContent = () => {
-    return (
-      <>
+  return (
+    <>
+    
+    
         <Form onSubmit={(e) => onSumbitAddTask(e)} id="addTaskForm">
           <Form.Group controlId="">
             <div className="row">
@@ -131,34 +116,9 @@ const AddClassFromModal = ({ handleClose, openModal }) => {
             </Modal.Footer>
           </Form.Group>
         </Form>
-      </>
-    );
-  };
-  const renderSucessMessage = () => {
-    return <Message title="Class Added Successfuly" />;
-  };
-  return (
-    <>
-      <Modal
-        show={openModal}
-        onHide={handleCloseButton}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-        className="contact-form "
-      >
-        <Modal.Header closeButton>
-          <h3>Add Class</h3>
-        </Modal.Header>
-
-        <Modal.Body>
-          {!loader && !sucessMessage && renderModalContent()}
-          {loader && renderLoader()}
-          {sucessMessage && renderSucessMessage()}
-        </Modal.Body>
-      </Modal>
+      
     </>
   );
 };
 
-export default AddClassFromModal;
+export default AddClassFrom;
