@@ -7,7 +7,7 @@ import Message from "../Message";
 import { ColumnContext, ItemsContext } from "./../../containers/AdminPanel";
 
 import "./style.css";
-const AddClassFrom = ({handleClose , handleCloseButton , setSucessMessage ,setLoader  }) => {
+const AddClassFrom = ({ setSucessMessage, setLoader }) => {
   let [itemsFromBackend, setItemsFromBackend] = useContext(ItemsContext);
   let [columnsFromBackend, setColumnsFromBackend] = useContext(ColumnContext);
 
@@ -59,64 +59,69 @@ const AddClassFrom = ({handleClose , handleCloseButton , setSucessMessage ,setLo
     setTimeout(() => {
       setLoader(false);
       setSucessMessage(true);
+      taskData = {
+        // this object form api
+        id: "",
+        name: "",
+        place: "",
+        price: "",
+        status: "",
+      };
     }, 500);
   };
   return (
     <>
-    
-    
-        <Form onSubmit={(e) => onSumbitAddTask(e)} id="addTaskForm">
-          <Form.Group controlId="">
-            <div className="row">
-              <div className="col-12">
-                <div className="form-data">
-                  <Form.Label>Add Class</Form.Label>
-                  <Form.Control type="text" name="name" />
-                </div>
-              </div>
-              <div className="col-6">
-                <div className="form-data">
-                  <Form.Label>Place</Form.Label>
-                  <Form.Control type="text" name="place" />
-                </div>
-              </div>
-              <div className="col-6">
-                <div className="form-data">
-                  <Form.Label>Price</Form.Label>
-                  <Form.Control type="text" name="price" />
-                </div>
-              </div>
-              <div className="col-12">
-                <div className="form-data">
-                  <Form.Label>status</Form.Label>
-                  {selectStatus.map((status, index) => {
-                    return (
-                      <div key={index}>
-                        <CheckBox
-                          showOptions={true}
-                          option={status.option}
-                          name="status"
-                          type="radio"
-                        />
-                      </div>
-                    );
-                  })}
-                </div>
+      <Form onSubmit={(e) => onSumbitAddTask(e)} id="addTaskForm">
+        <Form.Group controlId="">
+          <div className="row">
+            <div className="col-12">
+              <div className="form-data">
+                <Form.Label>Add Class</Form.Label>
+                <Form.Control type="text" name="name" />
               </div>
             </div>
-            <Modal.Footer>
-              <div className="button">
-                <ButtonComponent
-                  share={""}
-                  text={"Submit"}
-                  theme={"light-green"}
-                  type={"submit"}
-                />
+            <div className="col-6">
+              <div className="form-data">
+                <Form.Label>Place</Form.Label>
+                <Form.Control type="text" name="place" />
               </div>
-            </Modal.Footer>
-          </Form.Group>
-        </Form>
-      
+            </div>
+            <div className="col-6">
+              <div className="form-data">
+                <Form.Label>Price</Form.Label>
+                <Form.Control type="text" name="price" />
+              </div>
+            </div>
+            <div className="col-12">
+              <div className="form-data">
+                <Form.Label>status</Form.Label>
+                {selectStatus.map((status, index) => {
+                  return (
+                    <div key={index}>
+                      <CheckBox
+                        showOptions={true}
+                        option={status.option}
+                        name="status"
+                        type="radio"
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+          <Modal.Footer>
+            <div className="button">
+              <ButtonComponent
+                share={""}
+                text={"Submit"}
+                theme={"light-green"}
+                type={"submit"}
+              />
+            </div>
+          </Modal.Footer>
+        </Form.Group>
+      </Form>
     </>
   );
 };

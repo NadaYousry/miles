@@ -3,7 +3,7 @@ import { DropdownButton, Dropdown } from "react-bootstrap";
 import { faUserAlt, faEllipsisH } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./style.css";
-const DropDownMenu = ({ selectOptions }) => {
+const SettingCardDropDownMenu = ({ selectOptions }) => {
   return (
     <>
       <DropdownButton
@@ -22,4 +22,4 @@ const DropDownMenu = ({ selectOptions }) => {
   );
 };
 
-export default DropDownMenu;
+export default SettingCardDropDownMenu;
