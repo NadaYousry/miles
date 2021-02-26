@@ -28,11 +28,13 @@ function AdminClassesPage() {
     { color: "#d80c05", option: "Completed" },
   ];
   const selectActivities = [
+    { option: "All Activities" },
     { option: "Tennis" },
     { option: "Pilate" },
     { option: "Fitness" },
   ];
   const days = [
+    { option: "All Days" },
     { option: "Monday" },
     { option: "Tuesday" },
     { option: "Wednesday" },

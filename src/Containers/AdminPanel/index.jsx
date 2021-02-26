@@ -73,6 +73,13 @@ const AdminPanel = () => {
               >
                 Classes
               </NavLink>
+              <NavLink
+                activeClassName="active"
+                to={`/admin/calendar`}
+                className="nav-link"
+              >
+                Calendar
+              </NavLink>
             </Nav>
           </div>
 
@@ -92,6 +99,12 @@ const AdminPanel = () => {
                   />
                   </ColumnContext.Provider>
                   </ItemsContext.Provider>
+                </Suspense>
+              </Route>
+              <Route path={`/admin/calendar`}>
+                <Suspense fallback={<Loader />}>
+                  <LazyComponents.AdminCalendar
+                  />
                 </Suspense>
               </Route>
               <Redirect exact from="/admin" to="admin/about" />
