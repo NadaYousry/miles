@@ -10,25 +10,15 @@ import {
   AppointmentTooltip,
   AppointmentForm,
   EditRecurrenceMenu,
-  Resources,
   ViewSwitcher,
   DayView,
   WeekView,
   DragDropProvider,
   TodayButton,
+  Resources,
 } from "@devexpress/dx-react-scheduler-material-ui";
 import "./styles.css";
-import { Card, Paper } from "@material-ui/core";
-import DragappleCard from "../DragappleCard";
-import { render } from "@testing-library/react";
-
-const DayScaleCell = (props) => (
-  <MonthView.DayScaleCell
-    {...props}
-    style={{ textAlign: "center", fontWeight: "bold" }}
-  />
-);
-
+import {  Paper } from "@material-ui/core";
 const AdminCalendar = () => {
   let [itemsFromBackend, setItemsFromBackend] = useContext(ItemsContext);
   // console.log(columnsFromBackend);
@@ -54,37 +44,43 @@ const AdminCalendar = () => {
     }
     return { data };
   };
-  const dataCard = (e) => {
-    console.log(e);
-    return(
-      <>
-      <DragappleCard item={e.data} isEdit={false} />
-
-      </>
-    )
-    
-  };
+  const resource =[{
+    fieldName: 'status',
+    instances:[
+      {
+        id:'active',
+        color: '#6abf48',
+      }, {
+        id:"soon",
+        color: '#ebef04',
+      },{
+        id:"completed",
+        color: '#d80c05',
+      },
+    ],
+  }];
   return (
-    <Paper>
+    <Paper >
       <Scheduler data={data}>
         <ViewState
           defaultCurrentDate="2021-07-17"
           defaultCurrentViewName="Month"
         />
 
-        <MonthView dayScaleCellComponent={DayScaleCell} />
+        <MonthView />
         <DayView />
         <WeekView startDayHour={10} endDayHour={19} />
         <EditingState onCommitChanges={commitChanges} />
-        <Appointments appointmentComponent={(e)=>dataCard(e)}/>
-
+        <Appointments />
         <Toolbar />
+        
         <ViewSwitcher />
         <DateNavigator />
         <TodayButton />
         <EditRecurrenceMenu />
-        <AppointmentTooltip showCloseButton showDeleteButton showOpenButton />
-        <DragDropProvider />
+        <AppointmentTooltip showCloseButton  />
+        <Resources data={resource}/>
+        <DragDropProvider/>
       </Scheduler>
     </Paper>
   );

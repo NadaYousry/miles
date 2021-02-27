@@ -17,10 +17,8 @@ const AdminPanel = () => {
       price: "60",
       status: "active",
       registration_count: "15/20",
-      time: "Monday 7:00PM -8:00PM",
       startDate: new Date(2021, 6, 5, 9, 30),
       endDate: new Date(2021, 6, 5, 11, 30),
-      ownerId: 1, 
     },
     {
       id: "2",
@@ -29,10 +27,8 @@ const AdminPanel = () => {
       price: "50",
       status: "completed",
       registration_count: "5/5",
-      time: "Monday 7:00PM -8:00PM",
       startDate: new Date(2021, 6, 10, 12, 0),
       endDate: new Date(2021, 6, 10, 13, 0),
-      ownerId: 3,
     },
     {
       id: "3",
@@ -41,10 +37,8 @@ const AdminPanel = () => {
       price: "80",
       status: "active",
       registration_count: "6/10",
-      time: "Monday 7:00PM -8:00PM",
       startDate: new Date(2021, 6, 20, 9, 30),
       endDate: new Date(2021, 6, 20, 11, 30),
-      ownerId: 2,
     },
     {
       id: "4",
@@ -53,10 +47,8 @@ const AdminPanel = () => {
       price: "150",
       status: "completed",
       registration_count: "8/10",
-      time: "Monday 7:00PM -8:00PM",
       startDate: new Date(2021, 6, 21, 14, 30),
       endDate: new Date(2021, 6, 21, 15, 30),
-      ownerId: 1,
     },
     {
       id: "5",
@@ -65,10 +57,8 @@ const AdminPanel = () => {
       price: "100",
       status: "soon",
       registration_count: "7/15",
-      time: "Monday 7:00PM -8:00PM",
       startDate: new Date(2021, 6, 18, 12, 0),
       endDate: new Date(2021, 6, 18, 13, 35),
-      ownerId:1,
     },
   ]);
   const [columnsFromBackend, setColumnsFromBackend] = useState({
