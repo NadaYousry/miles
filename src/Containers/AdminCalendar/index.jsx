@@ -21,9 +21,10 @@ import "./styles.css";
 import {  Paper } from "@material-ui/core";
 const AdminCalendar = () => {
   let [itemsFromBackend, setItemsFromBackend] = useContext(ItemsContext);
-  // console.log(columnsFromBackend);
   const [data, setData] = useState(itemsFromBackend);
+  console.log(itemsFromBackend , data);
 
+useEffect(()=>{setData(itemsFromBackend)} ,[itemsFromBackend] )
   const commitChanges = ({ added, changed, deleted }) => {
     if (added) {
       const startingAddedId =
@@ -66,14 +67,12 @@ const AdminCalendar = () => {
           defaultCurrentDate="2021-07-17"
           defaultCurrentViewName="Month"
         />
-
         <MonthView />
         <DayView />
         <WeekView startDayHour={10} endDayHour={19} />
         <EditingState onCommitChanges={commitChanges} />
         <Appointments />
         <Toolbar />
-        
         <ViewSwitcher />
         <DateNavigator />
         <TodayButton />

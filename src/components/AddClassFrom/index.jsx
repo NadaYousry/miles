@@ -104,6 +104,7 @@ const AddClassFrom = ({ setSucessMessage, setLoader }) => {
                       <CheckBox
                         showOptions={true}
                         option={status.option}
+                        value={status.option}
                         name="status"
                         type="radio"
                       />

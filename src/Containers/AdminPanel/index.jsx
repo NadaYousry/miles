@@ -129,28 +129,30 @@ const AdminPanel = () => {
       </div>
 
       <Switch>
-        <Route path={`/admin/about`}>
-          <Suspense fallback={<Loader />}>
-            <LazyComponents.AdminAboutPage isMobileScreen={isMobileScreen} />
-          </Suspense>
-        </Route>
         <ItemsContext.Provider value={[itemsFromBackend, setItemsFromBackend]}>
           <ColumnContext.Provider
             value={[columnsFromBackend, setColumnsFromBackend]}
           >
-            <Route path={`/admin/classes`}>
+            <Route path={`/admin/about`} >
+              <Suspense fallback={<Loader />}>
+                <LazyComponents.AdminAboutPage
+                  isMobileScreen={isMobileScreen}
+                />
+              </Suspense>
+            </Route>
+            <Route path={`/admin/classes`} >
               <Suspense fallback={<Loader />}>
                 <LazyComponents.AdminClassesPage />
               </Suspense>
             </Route>
-            <Route path={`/admin/calendar`}>
+            <Route path={`/admin/calendar`} >
               <Suspense fallback={<Loader />}>
                 <LazyComponents.AdminCalendar />
               </Suspense>
             </Route>
+        <Redirect exact from="/admin" to="/admin/about"  />
           </ColumnContext.Provider>
         </ItemsContext.Provider>
-        <Redirect exact from="/admin" to="admin/about" />
       </Switch>
     </div>
   );
