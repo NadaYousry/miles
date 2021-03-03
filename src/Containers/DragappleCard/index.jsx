@@ -8,7 +8,6 @@ import { Card } from "react-bootstrap";
 import "./style.css";
 
 const DragappleCard = ({ snapshot, item, isEdit, ...provided }) => {
-  console.log(item, isEdit);
   return (
     <>
       {item && (
